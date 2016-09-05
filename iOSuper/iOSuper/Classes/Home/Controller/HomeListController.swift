@@ -18,10 +18,6 @@ class HomeListController: UITableViewController {
         self.navigationItem.title = "Homelist"
     }
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 2
-    }
-    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
@@ -39,10 +35,19 @@ class HomeListController: UITableViewController {
         
         var cell = tableView.dequeueReusableCellWithIdentifier(identifilerCell) as? HomeListCell
         if cell == nil {
-            cell = HomeListCell.init(style: .Default, reuseIdentifier: identifilerCell, title: "11")
+            cell = NSBundle.mainBundle().loadNibNamed("HomeListCell", owner: self, options: nil).last as? HomeListCell
         }
         
-        cell?.cellTitle = "第\(indexPath.row)行"
+        cell?.lbPrice.text = "第\(indexPath.row)行"
         return cell!
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let homeSb = UIStoryboard.init(name: "Home", bundle: NSBundle.mainBundle())
+        let HomeInfo = homeSb.instantiateViewControllerWithIdentifier("CalculatorController")
+    
+        self.navigationController?.pushViewController(HomeInfo, animated: true)
+        
     }
 }

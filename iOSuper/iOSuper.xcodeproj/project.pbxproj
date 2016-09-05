@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E64D3EA31D7D3E7500A8A63D /* HomeListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E64D3EA21D7D3E7500A8A63D /* HomeListCell.xib */; };
+		E64D3EA51D7D439E00A8A63D /* CalculatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64D3EA41D7D439E00A8A63D /* CalculatorController.swift */; };
+		E64D3EA71D7D43B600A8A63D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64D3EA61D7D43B600A8A63D /* Home.storyboard */; };
+		E64D3EAA1D7D4F0E00A8A63D /* UIBarButtonItem+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64D3EA91D7D4F0E00A8A63D /* UIBarButtonItem+Addition.swift */; };
 		E671FCC21D7C8578006921EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E671FCC11D7C8578006921EF /* AppDelegate.swift */; };
 		E671FCC71D7C8578006921EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E671FCC51D7C8578006921EF /* Main.storyboard */; };
 		E671FCC91D7C8578006921EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E671FCC81D7C8578006921EF /* Assets.xcassets */; };
@@ -37,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E64D3EA21D7D3E7500A8A63D /* HomeListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeListCell.xib; sourceTree = "<group>"; };
+		E64D3EA41D7D439E00A8A63D /* CalculatorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorController.swift; sourceTree = "<group>"; };
+		E64D3EA61D7D43B600A8A63D /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		E64D3EA91D7D4F0E00A8A63D /* UIBarButtonItem+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Addition.swift"; sourceTree = "<group>"; };
 		E671FCBE1D7C8578006921EF /* iOSuper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSuper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E671FCC11D7C8578006921EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E671FCC61D7C8578006921EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E64D3EA81D7D4E8D00A8A63D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E64D3EA91D7D4F0E00A8A63D /* UIBarButtonItem+Addition.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		E671FCB51D7C8578006921EF = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +152,7 @@
 			children = (
 				E671FCF01D7C8DF1006921EF /* Home */,
 				E671FCF11D7C8DF1006921EF /* Main */,
+				E64D3EA81D7D4E8D00A8A63D /* Other */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -163,6 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				E671FCF91D7C9775006921EF /* HomeListController.swift */,
+				E64D3EA41D7D439E00A8A63D /* CalculatorController.swift */,
+				E64D3EA61D7D43B600A8A63D /* Home.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				E671FCFD1D7C97EF006921EF /* HomeListCell.swift */,
+				E64D3EA21D7D3E7500A8A63D /* HomeListCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -287,7 +307,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E671FCCC1D7C8578006921EF /* LaunchScreen.storyboard in Resources */,
+				E64D3EA71D7D43B600A8A63D /* Home.storyboard in Resources */,
 				E671FCC91D7C8578006921EF /* Assets.xcassets in Resources */,
+				E64D3EA31D7D3E7500A8A63D /* HomeListCell.xib in Resources */,
 				E671FCC71D7C8578006921EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,7 +335,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E64D3EAA1D7D4F0E00A8A63D /* UIBarButtonItem+Addition.swift in Sources */,
 				E671FCFC1D7C9775006921EF /* HomeListController.swift in Sources */,
+				E64D3EA51D7D439E00A8A63D /* CalculatorController.swift in Sources */,
 				E671FCFE1D7C97EF006921EF /* HomeListCell.swift in Sources */,
 				E671FCF71D7C9554006921EF /* MainNavgationController.swift in Sources */,
 				E671FCF31D7C8EC7006921EF /* MainTabbarController.swift in Sources */,
@@ -542,6 +566,7 @@
 				E671FCE81D7C8579006921EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E671FCE91D7C8579006921EF /* Build configuration list for PBXNativeTarget "iOSuperTests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +575,7 @@
 				E671FCEB1D7C8579006921EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E671FCEC1D7C8579006921EF /* Build configuration list for PBXNativeTarget "iOSuperUITests" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +584,7 @@
 				E671FCEE1D7C8579006921EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

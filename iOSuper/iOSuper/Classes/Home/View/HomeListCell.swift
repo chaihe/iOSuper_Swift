@@ -10,19 +10,11 @@ import UIKit
 
 class HomeListCell: UITableViewCell {
     
+    @IBOutlet weak var lbPrice: UILabel!
+    
     var cellTitle :String?{
         didSet{
-          self.textLabel?.text = cellTitle
+          self.lbPrice?.text = cellTitle! + "元"
         }
-    }
-    
-    init(style: UITableViewCellStyle, reuseIdentifier: String?, title:String) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
-        self.textLabel?.text = title
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 }

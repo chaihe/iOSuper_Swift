@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Calculator Controller-->
+        <scene sceneID="XaU-HH-dq2">
+            <objects>
+                <viewController storyboardIdentifier="CalculatorController" id="8gt-Kv-lVh" customClass="CalculatorController" customModule="iOSuper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wdC-pa-PWy"/>
+                        <viewControllerLayoutGuide type="bottom" id="7vC-BK-qq9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="57z-6t-Gki">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o29-PS-GtM">
+                                <rect key="frame" x="20" y="40" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PjA-md-Y7P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9QM-oY-YND">
+                                <rect key="frame" x="20" y="90" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QdO-yF-CYg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q8w-A2-TAF">
+                                <rect key="frame" x="20" y="140" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="tbi-Tb-rez"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WH-Uc-yAE">
+                                <rect key="frame" x="25" y="195" width="270" height="30"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="J2g-ZB-pB7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="计算">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="o29-PS-GtM" secondAttribute="trailing" constant="20" id="1fU-th-gZb"/>
+                            <constraint firstItem="2WH-Uc-yAE" firstAttribute="leading" secondItem="57z-6t-Gki" secondAttribute="leading" constant="25" id="4q2-hf-eA6"/>
+                            <constraint firstItem="9QM-oY-YND" firstAttribute="top" secondItem="o29-PS-GtM" secondAttribute="bottom" constant="20" id="6Mo-yS-43h"/>
+                            <constraint firstItem="q8w-A2-TAF" firstAttribute="top" secondItem="9QM-oY-YND" secondAttribute="bottom" constant="20" id="ARB-jF-pRI"/>
+                            <constraint firstItem="q8w-A2-TAF" firstAttribute="leading" secondItem="57z-6t-Gki" secondAttribute="leading" constant="20" id="RK5-if-lCT"/>
+                            <constraint firstAttribute="trailing" secondItem="q8w-A2-TAF" secondAttribute="trailing" constant="20" id="Y2L-AU-0d2"/>
+                            <constraint firstAttribute="trailing" secondItem="9QM-oY-YND" secondAttribute="trailing" constant="20" id="geO-ZW-Rx5"/>
+                            <constraint firstItem="o29-PS-GtM" firstAttribute="top" secondItem="wdC-pa-PWy" secondAttribute="bottom" constant="20" id="jDG-lk-w83"/>
+                            <constraint firstItem="2WH-Uc-yAE" firstAttribute="top" secondItem="q8w-A2-TAF" secondAttribute="bottom" constant="25" id="oAf-FY-wPi"/>
+                            <constraint firstAttribute="trailing" secondItem="2WH-Uc-yAE" secondAttribute="trailing" constant="25" id="rBV-Ol-XGF"/>
+                            <constraint firstItem="9QM-oY-YND" firstAttribute="leading" secondItem="57z-6t-Gki" secondAttribute="leading" constant="20" id="u2L-4B-Bhq"/>
+                            <constraint firstItem="o29-PS-GtM" firstAttribute="leading" secondItem="57z-6t-Gki" secondAttribute="leading" constant="20" id="xhf-kR-V5L"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FGG-fJ-YIo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263" y="402"/>
+        </scene>
+    </scenes>
+</document>
