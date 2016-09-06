@@ -1,4 +1,4 @@
-//
+    //
 //  HomeListController.swift
 //  iOSuper
 //
@@ -43,11 +43,9 @@ class HomeListController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        let homeSb = UIStoryboard.init(name: "Home", bundle: NSBundle.mainBundle())
-        let HomeInfo = homeSb.instantiateViewControllerWithIdentifier("CalculatorController")
     
-        self.navigationController?.pushViewController(HomeInfo, animated: true)
+        let homeInofs = CalculatorController.initWithSB(sbType.sbTypeHome)
+        self.navigationController?.pushViewController(homeInofs, animated: true)
         
     }
 }

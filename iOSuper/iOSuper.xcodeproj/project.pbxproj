@@ -11,6 +11,7 @@
 		E64D3EA51D7D439E00A8A63D /* CalculatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64D3EA41D7D439E00A8A63D /* CalculatorController.swift */; };
 		E64D3EA71D7D43B600A8A63D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64D3EA61D7D43B600A8A63D /* Home.storyboard */; };
 		E64D3EAA1D7D4F0E00A8A63D /* UIBarButtonItem+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64D3EA91D7D4F0E00A8A63D /* UIBarButtonItem+Addition.swift */; };
+		E669CB161D7EA2CC00C9FD24 /* UIViewController+SB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E669CB151D7EA2CC00C9FD24 /* UIViewController+SB.swift */; };
 		E671FCC21D7C8578006921EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E671FCC11D7C8578006921EF /* AppDelegate.swift */; };
 		E671FCC71D7C8578006921EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E671FCC51D7C8578006921EF /* Main.storyboard */; };
 		E671FCC91D7C8578006921EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E671FCC81D7C8578006921EF /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		E64D3EA41D7D439E00A8A63D /* CalculatorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorController.swift; sourceTree = "<group>"; };
 		E64D3EA61D7D43B600A8A63D /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		E64D3EA91D7D4F0E00A8A63D /* UIBarButtonItem+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Addition.swift"; sourceTree = "<group>"; };
+		E669CB151D7EA2CC00C9FD24 /* UIViewController+SB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SB.swift"; sourceTree = "<group>"; };
 		E671FCBE1D7C8578006921EF /* iOSuper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSuper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E671FCC11D7C8578006921EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E671FCC61D7C8578006921EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				E64D3EA91D7D4F0E00A8A63D /* UIBarButtonItem+Addition.swift */,
+				E669CB151D7EA2CC00C9FD24 /* UIViewController+SB.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E64D3EAA1D7D4F0E00A8A63D /* UIBarButtonItem+Addition.swift in Sources */,
+				E669CB161D7EA2CC00C9FD24 /* UIViewController+SB.swift in Sources */,
 				E671FCFC1D7C9775006921EF /* HomeListController.swift in Sources */,
 				E64D3EA51D7D439E00A8A63D /* CalculatorController.swift in Sources */,
 				E671FCFE1D7C97EF006921EF /* HomeListCell.swift in Sources */,
