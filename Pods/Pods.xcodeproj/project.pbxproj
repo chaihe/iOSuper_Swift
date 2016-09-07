@@ -1,0 +1,1234 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A242CA2FB29EE2229394913678A4A51 /* FDStackView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FF176A3D2F5E4320E06CCF8A3B4F3B /* FDStackView-dummy.m */; };
+		10F5A5FE89410E5772B4087ECE9390B7 /* FDStackViewAlignmentLayoutArrangement.h in Headers */ = {isa = PBXBuildFile; fileRef = 99022E48B778E31FCE1C361810A1A204 /* FDStackViewAlignmentLayoutArrangement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13202614FB4A2465FD5D212AC6393DE6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC156ACB78161152C19AE70E4F893C38 /* Request.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		16AD1BFF660888EFB7F81BA1FD480AD9 /* FDFullscreenPopGesture-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F175423C8D467687714520EE845EEC1 /* FDFullscreenPopGesture-dummy.m */; };
+		250B90954338EEFB0EBC6DAA23894DDA /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = D233056A8C83A9EB8C5A0EF9AF249B74 /* Stream.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		288B407C1861C325D63558155BE51969 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F414184FDE2889A43B1130DAF29A73 /* Notifications.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2A5AB4916280E380695FB60BC2F89985 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0751A64C524AB0DE4B40B58729D13535 /* Foundation.framework */; };
+		2C9261F4E04684FEBDD9749112B4E4D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0751A64C524AB0DE4B40B58729D13535 /* Foundation.framework */; };
+		383F4AF6C46AA6AC9F9217AF905FB7D8 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131C11217792DF16835F6FE7A2771715 /* Timeline.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		40B6973E8E5464C0C97726DC08D36735 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8850CEAB57025C2D92A70E684DD52 /* Manager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		48282E6082C04A94C1DD596D167E2076 /* FDTransformLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = D05E779C0B7631EDE8CB41D24719B253 /* FDTransformLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49E3C6AD3855E436BA17F1B575E0E19F /* FDStackViewLayoutArrangement.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDBA444CFD0B195BB973037FB099111 /* FDStackViewLayoutArrangement.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4D1E133635C2C164115458B7FE440CB4 /* FDFullscreenPopGesture-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 18A40FB9B36C89049AB0FF7C76F19C43 /* FDFullscreenPopGesture-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		514A09BBB819F361E14EA3435507C489 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D91710912D39105CE98C16714D7C0E /* ServerTrustPolicy.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		51EE9218E38A7D57FC9CF98DC7594201 /* Pods-iOSuper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5FB2BD0D1002D654D7041A6FED28FF3 /* Pods-iOSuper-dummy.m */; };
+		5B999E7360F86F1506DD00DA5D43A050 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 509BC5EC553A89F94A5DAB5C7B9BC14F /* UINavigationController+FDFullscreenPopGesture.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		61DABEF8F8D4350E238564650AA575BB /* FDStackView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF4B0448727C8C9509F8AAFDE8FFD9CE /* FDStackView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		734D4E9CBF9F977A8B62365C32ED517B /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5C937708465AC24DCBF1C1A0E5AB4E /* MultipartFormData.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		75161D27ED8A4BAB2312CE340F0C7994 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0751A64C524AB0DE4B40B58729D13535 /* Foundation.framework */; };
+		7668C472489F490F4C149804800DB207 /* FDStackViewExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 31987200CBEA2FD86DCB86189EC480E7 /* FDStackViewExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76AE6514EE6FC442EE90181482D9559C /* FDStackViewLayoutArrangement.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A428A2F8552A0E135844A5A933E1A /* FDStackViewLayoutArrangement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B5FA1B8D92C19483082CE1223FF1351 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D608D09BE82FC13A425B6C55B2B3FA /* CFNetwork.framework */; };
+		7D60F58E950B357BD41E0B6BF9BDDFBE /* FDStackView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CEDE3E32B2BFAA6D5F3B3BC69543E13 /* FDStackView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82D1A45C067C46EA182F5271C7CF8398 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B698E3F12CEFB307E1E7767C6529A2 /* Alamofire.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		85C37585192E5901A5BF770B69F4E80C /* LoggerClient.h in Headers */ = {isa = PBXBuildFile; fileRef = C480169C7C194E07112CBAB28822F637 /* LoggerClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		860740DF5BEB98EC9718835A7E300EAA /* NSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 582DEDE4EAA28B7D49830774AAD85F6A /* NSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		863E32885CF961E10C349860B945D58C /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3351507B3511A9A10FB2DD7D53AE41 /* Error.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		91C09AC2A52ED69A27C8D923139A006F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0751A64C524AB0DE4B40B58729D13535 /* Foundation.framework */; };
+		9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA8F1F9275F867A876F1AC089262B6E /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96BBFE1BF13746FDFCBCE67E02095DBE /* LoggerCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B134CAEAC58C7A8EAA96820C091EC0 /* LoggerCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D49C50387343A4565DA4C017FE261BF /* FDTransformLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DB019689AD0D6E08366F95FF4729FA /* FDTransformLayer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A106C54DC421330ED38985839A4AA4E9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB433FBC4A4EDBC81061E3E9B5C64361 /* SystemConfiguration.framework */; };
+		A13F241863C06A82E01A3486274BAA3B /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF24EDA55289E4387155F4BE8908F7D /* Download.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A1FE2DEA4321E610D384146D5864A6F6 /* FDStackViewAlignmentLayoutArrangement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8AFA65A29187D82B799CE41CCF6D2 /* FDStackViewAlignmentLayoutArrangement.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A3FEABAC2CB7E5EF79D1FCF636DCF05C /* FDGapLayoutGuide.h in Headers */ = {isa = PBXBuildFile; fileRef = 23927FBD7C513F8E5EB0EC4B9275A4FF /* FDGapLayoutGuide.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A644C44A23B7B93AD925F99A76EC408D /* FDLayoutSpacer.h in Headers */ = {isa = PBXBuildFile; fileRef = C911C512C49A5B95CF63B4558175588B /* FDLayoutSpacer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AABAC82F28A1E5282C26F8D3FF2BE40B /* Pods-iOSuper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FEB087B6A2686CFD6AD437E6B28436ED /* Pods-iOSuper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC0BD0F23C2A8C8F350899F45DB4F91F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDD9E2989E4B469862E805E21284B37 /* Validation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AF87549C19E310E093479BC6FF6C3DA5 /* FDStackViewDistributionLayoutArrangement.h in Headers */ = {isa = PBXBuildFile; fileRef = 493BA0A68AE701DCA31C0139FAC0652D /* FDStackViewDistributionLayoutArrangement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4B39ECBBD08F432F924F52534DE6786 /* FDGapLayoutGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB64EF35ACD75F259E17959A09D634E /* FDGapLayoutGuide.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B739892C0EB5223196A0421537848155 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0751A64C524AB0DE4B40B58729D13535 /* Foundation.framework */; };
+		BAE69CD22A7C90828180D3664DED8E1A /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572DA2D8D49C87A233A5E9CBFB8E9FE /* Result.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C86923E3A6648C9DE493F465644EE071 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9826DAC6814812DAB764CE21D203262 /* Upload.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CAB2EA130C80E93F1B5AB35F8C3D7007 /* LoggerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A101DE484CE9418EC80E2CBF69BD8B /* LoggerClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CC98E3B30485561811511E3052E9DAE9 /* NSLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C3F9DE5FE3E3F796A737DBA17114416 /* NSLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD22A93DB40B170FABC6FBF487E4BE3C /* FDLayoutSpacer.m in Sources */ = {isa = PBXBuildFile; fileRef = 03230F05CF4AA63E54FCB02C3DC9F473 /* FDLayoutSpacer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CFE6E0DA62CC3C0AA51C460558431C28 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32A91475604A9AD4318962E2ECF707A /* Response.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DB11B990D8BD798A427C7E5C4CE15053 /* FDStackViewExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D57C121AD7075ACDC9F695C75F5E0 /* FDStackViewExtensions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E42A03C03AF789E657C8A1D228A725C2 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B0290AE6853144A9757B6B7EC5ADAE /* ParameterEncoding.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E78D4566237BAE5B48BB2C0358F63D7B /* FDStackViewDistributionLayoutArrangement.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803435A2D3A5F9450CC1E3A205C48FB /* FDStackViewDistributionLayoutArrangement.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E96651D302865F53AECC2EBD508FA079 /* FDStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = B53637AFD369F09B498B94A928E4C636 /* FDStackView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EA4ECCC3BC1B43CF2865D22871FB1E6C /* UINavigationController+FDFullscreenPopGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = 09ADE484593E3364A7AD30BB08282F4F /* UINavigationController+FDFullscreenPopGesture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDBD0FB0C34E68F787748DED462CAE6D /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4725D5E833EE6949CF1951FCD19A317 /* ResponseSerialization.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F51FDBE0B58714B7CCFC263E262B0842 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE333B8B6FA22211779E11DF08BBCF6 /* Alamofire-dummy.m */; };
+		FB921E2C31223EFB30816D7DB741889B /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE124D77EBADD92F4FD11D6919EF345E /* NetworkReachabilityManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FF9EA7B180C4FEE0CEA1283221FF9635 /* NSLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C8D6814B98DCCA0AB16B108FF3992 /* NSLogger-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C39DDC3B3C7A5AC11F6F40ED43BBE08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19C0DF4E1691836C9627E3B0BB3144CE;
+			remoteInfo = FDStackView;
+		};
+		3E66178A718D1D0D5256DF4761FDE16A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE21BE8BD1A42D5DA533C380E18F4B4A;
+			remoteInfo = NSLogger;
+		};
+		84892DD3DE528E815AB969A01F51FAB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 303B3AC6DD17B1EE7D98EF8BF8898BEB;
+			remoteInfo = FDFullscreenPopGesture;
+		};
+		C0180CAA368D9B8E68D134A340E086B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79C040AFDDCE1BCBF6D8B5EB0B85887F;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A101DE484CE9418EC80E2CBF69BD8B /* LoggerClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LoggerClient.m; path = "Client Logger/iOS/LoggerClient.m"; sourceTree = "<group>"; };
+		03230F05CF4AA63E54FCB02C3DC9F473 /* FDLayoutSpacer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FDLayoutSpacer.m; path = FDStackView/FDLayoutSpacer.m; sourceTree = "<group>"; };
+		03D608D09BE82FC13A425B6C55B2B3FA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		0572DA2D8D49C87A233A5E9CBFB8E9FE /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		0751A64C524AB0DE4B40B58729D13535 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		09ADE484593E3364A7AD30BB08282F4F /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+FDFullscreenPopGesture.h"; path = "FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		0AA8F1F9275F867A876F1AC089262B6E /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		0F9A46695A552B0804B4D8D8AB0F9C84 /* Pods-iOSuper-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSuper-acknowledgements.plist"; sourceTree = "<group>"; };
+		131C11217792DF16835F6FE7A2771715 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		1803435A2D3A5F9450CC1E3A205C48FB /* FDStackViewDistributionLayoutArrangement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FDStackViewDistributionLayoutArrangement.m; path = FDStackView/FDStackViewDistributionLayoutArrangement.m; sourceTree = "<group>"; };
+		18A40FB9B36C89049AB0FF7C76F19C43 /* FDFullscreenPopGesture-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FDFullscreenPopGesture-umbrella.h"; sourceTree = "<group>"; };
+		18B134CAEAC58C7A8EAA96820C091EC0 /* LoggerCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoggerCommon.h; path = "Client Logger/iOS/LoggerCommon.h"; sourceTree = "<group>"; };
+		20C70B01BC3F8CD7FC82A57B6D142200 /* NSLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSLogger-prefix.pch"; sourceTree = "<group>"; };
+		23927FBD7C513F8E5EB0EC4B9275A4FF /* FDGapLayoutGuide.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FDGapLayoutGuide.h; path = FDStackView/FDGapLayoutGuide.h; sourceTree = "<group>"; };
+		251CE2961B4C7E0835F99914EF2A9DCB /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		2BDF013A0A82758B3B6A9AC1FE5AA018 /* FDFullscreenPopGesture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FDFullscreenPopGesture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31987200CBEA2FD86DCB86189EC480E7 /* FDStackViewExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FDStackViewExtensions.h; path = FDStackView/FDStackViewExtensions.h; sourceTree = "<group>"; };
+		37CEFF74255043B9B93B22AD3CE1CFEC /* FDStackView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FDStackView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		453A428A2F8552A0E135844A5A933E1A /* FDStackViewLayoutArrangement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FDStackViewLayoutArrangement.h; path = FDStackView/FDStackViewLayoutArrangement.h; sourceTree = "<group>"; };
+		455360E24E29122E26C6B6570E0E1528 /* Pods-iOSuper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSuper.debug.xcconfig"; sourceTree = "<group>"; };
+		455EEC39B8502D4D1EE8D1152AD44627 /* FDStackView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FDStackView.xcconfig; sourceTree = "<group>"; };
+		493BA0A68AE701DCA31C0139FAC0652D /* FDStackViewDistributionLayoutArrangement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FDStackViewDistributionLayoutArrangement.h; path = FDStackView/FDStackViewDistributionLayoutArrangement.h; sourceTree = "<group>"; };
+		4AA905C757A23678D35C209283B16A4E /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "Reveal-Framework-iOS-1.6.2/Reveal.framework"; sourceTree = "<group>"; };
+		4C1D57C121AD7075ACDC9F695C75F5E0 /* FDStackViewExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FDStackViewExtensions.m; path = FDStackView/FDStackViewExtensions.m; sourceTree = "<group>"; };
+		4CEDE3E32B2BFAA6D5F3B3BC69543E13 /* FDStackView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FDStackView.h; path = FDStackView/FDStackView.h; sourceTree = "<group>"; };
+		4D3351507B3511A9A10FB2DD7D53AE41 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		509BC5EC553A89F94A5DAB5C7B9BC14F /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+FDFullscreenPopGesture.m"; path = "FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		54CA3BE4BA6BEFBB68D23EF98FB95269 /* Pods-iOSuper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iOSuper.modulemap"; sourceTree = "<group>"; };
+		582DEDE4EAA28B7D49830774AAD85F6A /* NSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSLogger.h; path = "Client Logger/iOS/NSLogger.h"; sourceTree = "<group>"; };
+		5C7D192BF8E9D7F1D141C6546313EDDB /* FDStackView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FDStackView.modulemap; sourceTree = "<group>"; };
+		6038B9CF84939E40469E074BF395D32C /* NSLogger.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NSLogger.xcconfig; sourceTree = "<group>"; };
+		614DE9CB9E5600F494F683AE0155CDF4 /* Pods-iOSuper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSuper.release.xcconfig"; sourceTree = "<group>"; };
+		6524FA36CF629F6EA0712E47E25A2C0E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AA8AFA65A29187D82B799CE41CCF6D2 /* FDStackViewAlignmentLayoutArrangement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FDStackViewAlignmentLayoutArrangement.m; path = FDStackView/FDStackViewAlignmentLayoutArrangement.m; sourceTree = "<group>"; };
+		6BBC655824D7314F7C8E020C939D5C4E /* NSLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D5C937708465AC24DCBF1C1A0E5AB4E /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		6F175423C8D467687714520EE845EEC1 /* FDFullscreenPopGesture-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FDFullscreenPopGesture-dummy.m"; sourceTree = "<group>"; };
+		73BEA77C337CAA9F73895E6CC5358D8C /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
+		75FFE59348C13FA417EF2E7DFEFC8732 /* Pods-iOSuper-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSuper-frameworks.sh"; sourceTree = "<group>"; };
+		7BDD9E2989E4B469862E805E21284B37 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		7C3F9DE5FE3E3F796A737DBA17114416 /* NSLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSLogger-umbrella.h"; sourceTree = "<group>"; };
+		825E600A3DF8FCF9CE2501F638EDE054 /* FDStackView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FDStackView-prefix.pch"; sourceTree = "<group>"; };
+		87FF176A3D2F5E4320E06CCF8A3B4F3B /* FDStackView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FDStackView-dummy.m"; sourceTree = "<group>"; };
+		88DB019689AD0D6E08366F95FF4729FA /* FDTransformLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FDTransformLayer.m; path = FDStackView/FDTransformLayer.m; sourceTree = "<group>"; };
+		901C8D6814B98DCCA0AB16B108FF3992 /* NSLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSLogger-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99022E48B778E31FCE1C361810A1A204 /* FDStackViewAlignmentLayoutArrangement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FDStackViewAlignmentLayoutArrangement.h; path = FDStackView/FDStackViewAlignmentLayoutArrangement.h; sourceTree = "<group>"; };
+		A042ACD2DB70C397F7EC36859A70799D /* FDFullscreenPopGesture-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FDFullscreenPopGesture-prefix.pch"; sourceTree = "<group>"; };
+		A0CE9ED370E7045B05237EACCB8F6BD7 /* Pods-iOSuper-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOSuper-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A6B698E3F12CEFB307E1E7767C6529A2 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		ADF24EDA55289E4387155F4BE8908F7D /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		B271565D9FF299062FA6A9D360A2E8DE /* NSLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NSLogger.modulemap; sourceTree = "<group>"; };
+		B49FB8F462EB8DFA464A1EA9609CA14D /* FDFullscreenPopGesture.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FDFullscreenPopGesture.xcconfig; sourceTree = "<group>"; };
+		B4F8850CEAB57025C2D92A70E684DD52 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		B53637AFD369F09B498B94A928E4C636 /* FDStackView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FDStackView.m; path = FDStackView/FDStackView.m; sourceTree = "<group>"; };
+		B9B0290AE6853144A9757B6B7EC5ADAE /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		BA619E878FCB8AAD1D5FBCCEDC782CD3 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDC066AC9C2CD6C2AE8E780B8DA12AE8 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		BEB64EF35ACD75F259E17959A09D634E /* FDGapLayoutGuide.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FDGapLayoutGuide.m; path = FDStackView/FDGapLayoutGuide.m; sourceTree = "<group>"; };
+		BEF63FD767CDD58ADA15A1FCBB204D94 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0F4C4A1CE3059C58B12108AAE085A41 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		C32A91475604A9AD4318962E2ECF707A /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		C480169C7C194E07112CBAB28822F637 /* LoggerClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoggerClient.h; path = "Client Logger/iOS/LoggerClient.h"; sourceTree = "<group>"; };
+		C6D91710912D39105CE98C16714D7C0E /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		C911C512C49A5B95CF63B4558175588B /* FDLayoutSpacer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FDLayoutSpacer.h; path = FDStackView/FDLayoutSpacer.h; sourceTree = "<group>"; };
+		CEE333B8B6FA22211779E11DF08BBCF6 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		CF4B0448727C8C9509F8AAFDE8FFD9CE /* FDStackView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FDStackView-umbrella.h"; sourceTree = "<group>"; };
+		CF5616DE71E45FBB753CEA5FB7AAF67D /* FDFullscreenPopGesture.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FDFullscreenPopGesture.modulemap; sourceTree = "<group>"; };
+		D05E779C0B7631EDE8CB41D24719B253 /* FDTransformLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FDTransformLayer.h; path = FDStackView/FDTransformLayer.h; sourceTree = "<group>"; };
+		D233056A8C83A9EB8C5A0EF9AF249B74 /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
+		D3F0C0B2FB234DEEC67120DCCB7E9C0F /* Pods_iOSuper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSuper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5A5FFA02768980FD83C1525B892C8D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB433FBC4A4EDBC81061E3E9B5C64361 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		DE124D77EBADD92F4FD11D6919EF345E /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		E0F414184FDE2889A43B1130DAF29A73 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		E2090CD6839CB940047D27B9801CF524 /* Pods-iOSuper-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSuper-resources.sh"; sourceTree = "<group>"; };
+		E5FB2BD0D1002D654D7041A6FED28FF3 /* Pods-iOSuper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOSuper-dummy.m"; sourceTree = "<group>"; };
+		F0D840EB3B374E360832EFC102F57769 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4725D5E833EE6949CF1951FCD19A317 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		F9826DAC6814812DAB764CE21D203262 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		FA5C5C7D5453A241093F9F8F8A91A471 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC156ACB78161152C19AE70E4F893C38 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		FCDBA444CFD0B195BB973037FB099111 /* FDStackViewLayoutArrangement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FDStackViewLayoutArrangement.m; path = FDStackView/FDStackViewLayoutArrangement.m; sourceTree = "<group>"; };
+		FEB087B6A2686CFD6AD437E6B28436ED /* Pods-iOSuper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOSuper-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A26C69F19F0C7F052A013A1C1FD6359 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5AB4916280E380695FB60BC2F89985 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67181DA6F1B5BB8EA435210749C5CCF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C9261F4E04684FEBDD9749112B4E4D6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87C89D518468866E49E646CF8922B4F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B5FA1B8D92C19483082CE1223FF1351 /* CFNetwork.framework in Frameworks */,
+				75161D27ED8A4BAB2312CE340F0C7994 /* Foundation.framework in Frameworks */,
+				A106C54DC421330ED38985839A4AA4E9 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9754F9D0744EF430E1B195B62350BF04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B739892C0EB5223196A0421537848155 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1729F851F648EC60EE93CDB3C8BAEAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91C09AC2A52ED69A27C8D923139A006F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0014D0CD2C0D685CFA6B56475620DBB9 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				A6B698E3F12CEFB307E1E7767C6529A2 /* Alamofire.swift */,
+				ADF24EDA55289E4387155F4BE8908F7D /* Download.swift */,
+				4D3351507B3511A9A10FB2DD7D53AE41 /* Error.swift */,
+				B4F8850CEAB57025C2D92A70E684DD52 /* Manager.swift */,
+				6D5C937708465AC24DCBF1C1A0E5AB4E /* MultipartFormData.swift */,
+				DE124D77EBADD92F4FD11D6919EF345E /* NetworkReachabilityManager.swift */,
+				E0F414184FDE2889A43B1130DAF29A73 /* Notifications.swift */,
+				B9B0290AE6853144A9757B6B7EC5ADAE /* ParameterEncoding.swift */,
+				FC156ACB78161152C19AE70E4F893C38 /* Request.swift */,
+				C32A91475604A9AD4318962E2ECF707A /* Response.swift */,
+				F4725D5E833EE6949CF1951FCD19A317 /* ResponseSerialization.swift */,
+				0572DA2D8D49C87A233A5E9CBFB8E9FE /* Result.swift */,
+				C6D91710912D39105CE98C16714D7C0E /* ServerTrustPolicy.swift */,
+				D233056A8C83A9EB8C5A0EF9AF249B74 /* Stream.swift */,
+				131C11217792DF16835F6FE7A2771715 /* Timeline.swift */,
+				F9826DAC6814812DAB764CE21D203262 /* Upload.swift */,
+				7BDD9E2989E4B469862E805E21284B37 /* Validation.swift */,
+				6600D31E11E982F40233C1771CBC30C4 /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F82F580C21B0E63B17DA520B6648F74E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FC45FD79E188AB28CD2FDE663FFDBBB /* Reveal-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				B5B47CABFCBDCCCB92E8AC7773A4DF17 /* Frameworks */,
+			);
+			path = "Reveal-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		340A583DBB674848902A338FEB551B22 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF5616DE71E45FBB753CEA5FB7AAF67D /* FDFullscreenPopGesture.modulemap */,
+				B49FB8F462EB8DFA464A1EA9609CA14D /* FDFullscreenPopGesture.xcconfig */,
+				6F175423C8D467687714520EE845EEC1 /* FDFullscreenPopGesture-dummy.m */,
+				A042ACD2DB70C397F7EC36859A70799D /* FDFullscreenPopGesture-prefix.pch */,
+				18A40FB9B36C89049AB0FF7C76F19C43 /* FDFullscreenPopGesture-umbrella.h */,
+				BEF63FD767CDD58ADA15A1FCBB204D94 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FDFullscreenPopGesture";
+			sourceTree = "<group>";
+		};
+		58C9E4B21F5332EBE3D4B93820658979 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA5C5C7D5453A241093F9F8F8A91A471 /* Info.plist */,
+				B271565D9FF299062FA6A9D360A2E8DE /* NSLogger.modulemap */,
+				6038B9CF84939E40469E074BF395D32C /* NSLogger.xcconfig */,
+				901C8D6814B98DCCA0AB16B108FF3992 /* NSLogger-dummy.m */,
+				20C70B01BC3F8CD7FC82A57B6D142200 /* NSLogger-prefix.pch */,
+				7C3F9DE5FE3E3F796A737DBA17114416 /* NSLogger-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NSLogger";
+			sourceTree = "<group>";
+		};
+		5D6509E7B50289BCA098652570AEC051 /* FDStackView */ = {
+			isa = PBXGroup;
+			children = (
+				23927FBD7C513F8E5EB0EC4B9275A4FF /* FDGapLayoutGuide.h */,
+				BEB64EF35ACD75F259E17959A09D634E /* FDGapLayoutGuide.m */,
+				C911C512C49A5B95CF63B4558175588B /* FDLayoutSpacer.h */,
+				03230F05CF4AA63E54FCB02C3DC9F473 /* FDLayoutSpacer.m */,
+				4CEDE3E32B2BFAA6D5F3B3BC69543E13 /* FDStackView.h */,
+				B53637AFD369F09B498B94A928E4C636 /* FDStackView.m */,
+				99022E48B778E31FCE1C361810A1A204 /* FDStackViewAlignmentLayoutArrangement.h */,
+				6AA8AFA65A29187D82B799CE41CCF6D2 /* FDStackViewAlignmentLayoutArrangement.m */,
+				493BA0A68AE701DCA31C0139FAC0652D /* FDStackViewDistributionLayoutArrangement.h */,
+				1803435A2D3A5F9450CC1E3A205C48FB /* FDStackViewDistributionLayoutArrangement.m */,
+				31987200CBEA2FD86DCB86189EC480E7 /* FDStackViewExtensions.h */,
+				4C1D57C121AD7075ACDC9F695C75F5E0 /* FDStackViewExtensions.m */,
+				453A428A2F8552A0E135844A5A933E1A /* FDStackViewLayoutArrangement.h */,
+				FCDBA444CFD0B195BB973037FB099111 /* FDStackViewLayoutArrangement.m */,
+				D05E779C0B7631EDE8CB41D24719B253 /* FDTransformLayer.h */,
+				88DB019689AD0D6E08366F95FF4729FA /* FDTransformLayer.m */,
+				8DB1D4CC73CD457C6EF55FFBF7AD9F6F /* Support Files */,
+			);
+			path = FDStackView;
+			sourceTree = "<group>";
+		};
+		6600D31E11E982F40233C1771CBC30C4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4C4A1CE3059C58B12108AAE085A41 /* Alamofire.modulemap */,
+				251CE2961B4C7E0835F99914EF2A9DCB /* Alamofire.xcconfig */,
+				CEE333B8B6FA22211779E11DF08BBCF6 /* Alamofire-dummy.m */,
+				BDC066AC9C2CD6C2AE8E780B8DA12AE8 /* Alamofire-prefix.pch */,
+				0AA8F1F9275F867A876F1AC089262B6E /* Alamofire-umbrella.h */,
+				F0D840EB3B374E360832EFC102F57769 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		6B7B95C601CED713A76B8D8AF4F2A1FC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				73C70325907E996F2BEBD97881D69DC7 /* Pods-iOSuper */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		73C70325907E996F2BEBD97881D69DC7 /* Pods-iOSuper */ = {
+			isa = PBXGroup;
+			children = (
+				6524FA36CF629F6EA0712E47E25A2C0E /* Info.plist */,
+				54CA3BE4BA6BEFBB68D23EF98FB95269 /* Pods-iOSuper.modulemap */,
+				A0CE9ED370E7045B05237EACCB8F6BD7 /* Pods-iOSuper-acknowledgements.markdown */,
+				0F9A46695A552B0804B4D8D8AB0F9C84 /* Pods-iOSuper-acknowledgements.plist */,
+				E5FB2BD0D1002D654D7041A6FED28FF3 /* Pods-iOSuper-dummy.m */,
+				75FFE59348C13FA417EF2E7DFEFC8732 /* Pods-iOSuper-frameworks.sh */,
+				E2090CD6839CB940047D27B9801CF524 /* Pods-iOSuper-resources.sh */,
+				FEB087B6A2686CFD6AD437E6B28436ED /* Pods-iOSuper-umbrella.h */,
+				455360E24E29122E26C6B6570E0E1528 /* Pods-iOSuper.debug.xcconfig */,
+				614DE9CB9E5600F494F683AE0155CDF4 /* Pods-iOSuper.release.xcconfig */,
+			);
+			name = "Pods-iOSuper";
+			path = "Target Support Files/Pods-iOSuper";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				B2C406357D6EB1391AC9E24BE2B548C6 /* Pods */,
+				99E91CE618EA79AF7E2DC8DA19D12664 /* Products */,
+				6B7B95C601CED713A76B8D8AF4F2A1FC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8DB1D4CC73CD457C6EF55FFBF7AD9F6F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C7D192BF8E9D7F1D141C6546313EDDB /* FDStackView.modulemap */,
+				455EEC39B8502D4D1EE8D1152AD44627 /* FDStackView.xcconfig */,
+				87FF176A3D2F5E4320E06CCF8A3B4F3B /* FDStackView-dummy.m */,
+				825E600A3DF8FCF9CE2501F638EDE054 /* FDStackView-prefix.pch */,
+				CF4B0448727C8C9509F8AAFDE8FFD9CE /* FDStackView-umbrella.h */,
+				D5A5FFA02768980FD83C1525B892C8D1 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FDStackView";
+			sourceTree = "<group>";
+		};
+		98A1ABE2622F430C23C5D8F6B8D2E7C8 /* FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				09ADE484593E3364A7AD30BB08282F4F /* UINavigationController+FDFullscreenPopGesture.h */,
+				509BC5EC553A89F94A5DAB5C7B9BC14F /* UINavigationController+FDFullscreenPopGesture.m */,
+				340A583DBB674848902A338FEB551B22 /* Support Files */,
+			);
+			path = FDFullscreenPopGesture;
+			sourceTree = "<group>";
+		};
+		99E91CE618EA79AF7E2DC8DA19D12664 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA619E878FCB8AAD1D5FBCCEDC782CD3 /* Alamofire.framework */,
+				2BDF013A0A82758B3B6A9AC1FE5AA018 /* FDFullscreenPopGesture.framework */,
+				37CEFF74255043B9B93B22AD3CE1CFEC /* FDStackView.framework */,
+				6BBC655824D7314F7C8E020C939D5C4E /* NSLogger.framework */,
+				D3F0C0B2FB234DEEC67120DCCB7E9C0F /* Pods_iOSuper.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABA6BD518A4065089BBC341BCB87F049 /* NSLogger */ = {
+			isa = PBXGroup;
+			children = (
+				ABCC57CF32F990A2B0937E9C85792D0A /* Standard */,
+				58C9E4B21F5332EBE3D4B93820658979 /* Support Files */,
+			);
+			path = NSLogger;
+			sourceTree = "<group>";
+		};
+		ABCC57CF32F990A2B0937E9C85792D0A /* Standard */ = {
+			isa = PBXGroup;
+			children = (
+				C480169C7C194E07112CBAB28822F637 /* LoggerClient.h */,
+				00A101DE484CE9418EC80E2CBF69BD8B /* LoggerClient.m */,
+				18B134CAEAC58C7A8EAA96820C091EC0 /* LoggerCommon.h */,
+				582DEDE4EAA28B7D49830774AAD85F6A /* NSLogger.h */,
+			);
+			name = Standard;
+			sourceTree = "<group>";
+		};
+		B2C406357D6EB1391AC9E24BE2B548C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0014D0CD2C0D685CFA6B56475620DBB9 /* Alamofire */,
+				D4E0356AF967AF326C98F0EC4DD4AF36 /* Bugly */,
+				98A1ABE2622F430C23C5D8F6B8D2E7C8 /* FDFullscreenPopGesture */,
+				5D6509E7B50289BCA098652570AEC051 /* FDStackView */,
+				ABA6BD518A4065089BBC341BCB87F049 /* NSLogger */,
+				2FC45FD79E188AB28CD2FDE663FFDBBB /* Reveal-iOS-SDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B5B47CABFCBDCCCB92E8AC7773A4DF17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AA905C757A23678D35C209283B16A4E /* Reveal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBFFD7755A655BCE1E155202ADBF52EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73BEA77C337CAA9F73895E6CC5358D8C /* Bugly.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4E0356AF967AF326C98F0EC4DD4AF36 /* Bugly */ = {
+			isa = PBXGroup;
+			children = (
+				BBFFD7755A655BCE1E155202ADBF52EB /* Frameworks */,
+			);
+			path = Bugly;
+			sourceTree = "<group>";
+		};
+		F82F580C21B0E63B17DA520B6648F74E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				03D608D09BE82FC13A425B6C55B2B3FA /* CFNetwork.framework */,
+				0751A64C524AB0DE4B40B58729D13535 /* Foundation.framework */,
+				DB433FBC4A4EDBC81061E3E9B5C64361 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		156F97E460EFCFA0F1AA2E707014119B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C37585192E5901A5BF770B69F4E80C /* LoggerClient.h in Headers */,
+				96BBFE1BF13746FDFCBCE67E02095DBE /* LoggerCommon.h in Headers */,
+				CC98E3B30485561811511E3052E9DAE9 /* NSLogger-umbrella.h in Headers */,
+				860740DF5BEB98EC9718835A7E300EAA /* NSLogger.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		168D52F14658779FBCF765D45BBED70D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABAC82F28A1E5282C26F8D3FF2BE40B /* Pods-iOSuper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27A4DC31297A175E5BE33B1B61C19169 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D1E133635C2C164115458B7FE440CB4 /* FDFullscreenPopGesture-umbrella.h in Headers */,
+				EA4ECCC3BC1B43CF2865D22871FB1E6C /* UINavigationController+FDFullscreenPopGesture.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93CD87D493F7FACA14F678B61D248D28 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3FEABAC2CB7E5EF79D1FCF636DCF05C /* FDGapLayoutGuide.h in Headers */,
+				A644C44A23B7B93AD925F99A76EC408D /* FDLayoutSpacer.h in Headers */,
+				61DABEF8F8D4350E238564650AA575BB /* FDStackView-umbrella.h in Headers */,
+				7D60F58E950B357BD41E0B6BF9BDDFBE /* FDStackView.h in Headers */,
+				10F5A5FE89410E5772B4087ECE9390B7 /* FDStackViewAlignmentLayoutArrangement.h in Headers */,
+				AF87549C19E310E093479BC6FF6C3DA5 /* FDStackViewDistributionLayoutArrangement.h in Headers */,
+				7668C472489F490F4C149804800DB207 /* FDStackViewExtensions.h in Headers */,
+				76AE6514EE6FC442EE90181482D9559C /* FDStackViewLayoutArrangement.h in Headers */,
+				48282E6082C04A94C1DD596D167E2076 /* FDTransformLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDF3B631BBB965A372347705CA14854 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		19C0DF4E1691836C9627E3B0BB3144CE /* FDStackView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2F103782B3F3E0D8FC4F456CE013D20 /* Build configuration list for PBXNativeTarget "FDStackView" */;
+			buildPhases = (
+				CECFBEB2DA1CB77223633C80A4512219 /* Sources */,
+				9754F9D0744EF430E1B195B62350BF04 /* Frameworks */,
+				93CD87D493F7FACA14F678B61D248D28 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FDStackView;
+			productName = FDStackView;
+			productReference = 37CEFF74255043B9B93B22AD3CE1CFEC /* FDStackView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		303B3AC6DD17B1EE7D98EF8BF8898BEB /* FDFullscreenPopGesture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A576F445EE4B6BE4686F9B0B7E2A8D6 /* Build configuration list for PBXNativeTarget "FDFullscreenPopGesture" */;
+			buildPhases = (
+				DC4A927785F2A92A798D759741E480B8 /* Sources */,
+				67181DA6F1B5BB8EA435210749C5CCF7 /* Frameworks */,
+				27A4DC31297A175E5BE33B1B61C19169 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FDFullscreenPopGesture;
+			productName = FDFullscreenPopGesture;
+			productReference = 2BDF013A0A82758B3B6A9AC1FE5AA018 /* FDFullscreenPopGesture.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CFB42910790CF0BDBCCEBAACD6B9367 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				5FEED44A5909604CBB444B6BE51B815D /* Sources */,
+				B1729F851F648EC60EE93CDB3C8BAEAD /* Frameworks */,
+				EFDF3B631BBB965A372347705CA14854 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = BA619E878FCB8AAD1D5FBCCEDC782CD3 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9771326D5F7613658FBAB919CDFB4F07 /* Pods-iOSuper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04E63B77DD8FA5E87741E886D36908FC /* Build configuration list for PBXNativeTarget "Pods-iOSuper" */;
+			buildPhases = (
+				664E0624DE51F8C8F0AB279D2B89872F /* Sources */,
+				0A26C69F19F0C7F052A013A1C1FD6359 /* Frameworks */,
+				168D52F14658779FBCF765D45BBED70D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				069AB7E3D17B73DC126A387FCC8BA9CF /* PBXTargetDependency */,
+				0843DA908BC2D48279D4B9B6051E7BDD /* PBXTargetDependency */,
+				48B61358588758C306E02E3EA23B40F9 /* PBXTargetDependency */,
+				5F7082BACF837FAF8E3D0FCDE59C2F07 /* PBXTargetDependency */,
+			);
+			name = "Pods-iOSuper";
+			productName = "Pods-iOSuper";
+			productReference = D3F0C0B2FB234DEEC67120DCCB7E9C0F /* Pods_iOSuper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FE21BE8BD1A42D5DA533C380E18F4B4A /* NSLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC2677C068B4A32EBEAABA8D2D9075AA /* Build configuration list for PBXNativeTarget "NSLogger" */;
+			buildPhases = (
+				ABB0F257DB4E86166300719DC36F1059 /* Sources */,
+				87C89D518468866E49E646CF8922B4F5 /* Frameworks */,
+				156F97E460EFCFA0F1AA2E707014119B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSLogger;
+			productName = NSLogger;
+			productReference = 6BBC655824D7314F7C8E020C939D5C4E /* NSLogger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 99E91CE618EA79AF7E2DC8DA19D12664 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */,
+				303B3AC6DD17B1EE7D98EF8BF8898BEB /* FDFullscreenPopGesture */,
+				19C0DF4E1691836C9627E3B0BB3144CE /* FDStackView */,
+				FE21BE8BD1A42D5DA533C380E18F4B4A /* NSLogger */,
+				9771326D5F7613658FBAB919CDFB4F07 /* Pods-iOSuper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FEED44A5909604CBB444B6BE51B815D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F51FDBE0B58714B7CCFC263E262B0842 /* Alamofire-dummy.m in Sources */,
+				82D1A45C067C46EA182F5271C7CF8398 /* Alamofire.swift in Sources */,
+				A13F241863C06A82E01A3486274BAA3B /* Download.swift in Sources */,
+				863E32885CF961E10C349860B945D58C /* Error.swift in Sources */,
+				40B6973E8E5464C0C97726DC08D36735 /* Manager.swift in Sources */,
+				734D4E9CBF9F977A8B62365C32ED517B /* MultipartFormData.swift in Sources */,
+				FB921E2C31223EFB30816D7DB741889B /* NetworkReachabilityManager.swift in Sources */,
+				288B407C1861C325D63558155BE51969 /* Notifications.swift in Sources */,
+				E42A03C03AF789E657C8A1D228A725C2 /* ParameterEncoding.swift in Sources */,
+				13202614FB4A2465FD5D212AC6393DE6 /* Request.swift in Sources */,
+				CFE6E0DA62CC3C0AA51C460558431C28 /* Response.swift in Sources */,
+				EDBD0FB0C34E68F787748DED462CAE6D /* ResponseSerialization.swift in Sources */,
+				BAE69CD22A7C90828180D3664DED8E1A /* Result.swift in Sources */,
+				514A09BBB819F361E14EA3435507C489 /* ServerTrustPolicy.swift in Sources */,
+				250B90954338EEFB0EBC6DAA23894DDA /* Stream.swift in Sources */,
+				383F4AF6C46AA6AC9F9217AF905FB7D8 /* Timeline.swift in Sources */,
+				C86923E3A6648C9DE493F465644EE071 /* Upload.swift in Sources */,
+				AC0BD0F23C2A8C8F350899F45DB4F91F /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		664E0624DE51F8C8F0AB279D2B89872F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51EE9218E38A7D57FC9CF98DC7594201 /* Pods-iOSuper-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABB0F257DB4E86166300719DC36F1059 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB2EA130C80E93F1B5AB35F8C3D7007 /* LoggerClient.m in Sources */,
+				FF9EA7B180C4FEE0CEA1283221FF9635 /* NSLogger-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CECFBEB2DA1CB77223633C80A4512219 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4B39ECBBD08F432F924F52534DE6786 /* FDGapLayoutGuide.m in Sources */,
+				CD22A93DB40B170FABC6FBF487E4BE3C /* FDLayoutSpacer.m in Sources */,
+				0A242CA2FB29EE2229394913678A4A51 /* FDStackView-dummy.m in Sources */,
+				E96651D302865F53AECC2EBD508FA079 /* FDStackView.m in Sources */,
+				A1FE2DEA4321E610D384146D5864A6F6 /* FDStackViewAlignmentLayoutArrangement.m in Sources */,
+				E78D4566237BAE5B48BB2C0358F63D7B /* FDStackViewDistributionLayoutArrangement.m in Sources */,
+				DB11B990D8BD798A427C7E5C4CE15053 /* FDStackViewExtensions.m in Sources */,
+				49E3C6AD3855E436BA17F1B575E0E19F /* FDStackViewLayoutArrangement.m in Sources */,
+				9D49C50387343A4565DA4C017FE261BF /* FDTransformLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4A927785F2A92A798D759741E480B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16AD1BFF660888EFB7F81BA1FD480AD9 /* FDFullscreenPopGesture-dummy.m in Sources */,
+				5B999E7360F86F1506DD00DA5D43A050 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		069AB7E3D17B73DC126A387FCC8BA9CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */;
+			targetProxy = C0180CAA368D9B8E68D134A340E086B4 /* PBXContainerItemProxy */;
+		};
+		0843DA908BC2D48279D4B9B6051E7BDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FDFullscreenPopGesture;
+			target = 303B3AC6DD17B1EE7D98EF8BF8898BEB /* FDFullscreenPopGesture */;
+			targetProxy = 84892DD3DE528E815AB969A01F51FAB9 /* PBXContainerItemProxy */;
+		};
+		48B61358588758C306E02E3EA23B40F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FDStackView;
+			target = 19C0DF4E1691836C9627E3B0BB3144CE /* FDStackView */;
+			targetProxy = 1C39DDC3B3C7A5AC11F6F40ED43BBE08 /* PBXContainerItemProxy */;
+		};
+		5F7082BACF837FAF8E3D0FCDE59C2F07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NSLogger;
+			target = FE21BE8BD1A42D5DA533C380E18F4B4A /* NSLogger */;
+			targetProxy = 3E66178A718D1D0D5256DF4761FDE16A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1E8893B1399787B448F9983496CD5CCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B49FB8F462EB8DFA464A1EA9609CA14D /* FDFullscreenPopGesture.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					arm64,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FDFullscreenPopGesture/FDFullscreenPopGesture-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FDFullscreenPopGesture/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FDFullscreenPopGesture/FDFullscreenPopGesture.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FDFullscreenPopGesture;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		201B67954F48C9C9438C575F400B467B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 455EEC39B8502D4D1EE8D1152AD44627 /* FDStackView.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					arm64,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FDStackView/FDStackView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FDStackView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FDStackView/FDStackView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FDStackView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4941CBCA9143426B30A6C02C2836B319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 251CE2961B4C7E0835F99914EF2A9DCB /* Alamofire.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					arm64,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4A802CCEF9C56482F8BC5366E62DA327 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 455360E24E29122E26C6B6570E0E1528 /* Pods-iOSuper.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					arm64,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-iOSuper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOSuper/Pods-iOSuper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_iOSuper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7067DE6E006B76DC6AEA1E8D416E6677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 251CE2961B4C7E0835F99914EF2A9DCB /* Alamofire.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					arm64,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C9B1A6B863CF81E30B236CD121CFB68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 455EEC39B8502D4D1EE8D1152AD44627 /* FDStackView.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					arm64,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FDStackView/FDStackView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FDStackView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FDStackView/FDStackView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FDStackView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		87C0D73D89EA3AD1DE0C8591E3270FF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6038B9CF84939E40469E074BF395D32C /* NSLogger.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					arm64,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NSLogger/NSLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NSLogger/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NSLogger/NSLogger.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = NSLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A75E08B16148C2D2908B957A7052B377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6038B9CF84939E40469E074BF395D32C /* NSLogger.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					arm64,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NSLogger/NSLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NSLogger/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NSLogger/NSLogger.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = NSLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF1F2F016970583ADB7B2253929E8430 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 614DE9CB9E5600F494F683AE0155CDF4 /* Pods-iOSuper.release.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					arm64,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-iOSuper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOSuper/Pods-iOSuper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_iOSuper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EDAA6E52CA89C21E34D0BF77B581B7C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B49FB8F462EB8DFA464A1EA9609CA14D /* FDFullscreenPopGesture.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					arm64,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FDFullscreenPopGesture/FDFullscreenPopGesture-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FDFullscreenPopGesture/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FDFullscreenPopGesture/FDFullscreenPopGesture.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FDFullscreenPopGesture;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04E63B77DD8FA5E87741E886D36908FC /* Build configuration list for PBXNativeTarget "Pods-iOSuper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A802CCEF9C56482F8BC5366E62DA327 /* Debug */,
+				AF1F2F016970583ADB7B2253929E8430 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A576F445EE4B6BE4686F9B0B7E2A8D6 /* Build configuration list for PBXNativeTarget "FDFullscreenPopGesture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDAA6E52CA89C21E34D0BF77B581B7C3 /* Debug */,
+				1E8893B1399787B448F9983496CD5CCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BEF9D903506B003EA5C2B249729489 /* Debug */,
+				AAF678CED40D3499169D10F63CA0719E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CFB42910790CF0BDBCCEBAACD6B9367 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4941CBCA9143426B30A6C02C2836B319 /* Debug */,
+				7067DE6E006B76DC6AEA1E8D416E6677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2F103782B3F3E0D8FC4F456CE013D20 /* Build configuration list for PBXNativeTarget "FDStackView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201B67954F48C9C9438C575F400B467B /* Debug */,
+				7C9B1A6B863CF81E30B236CD121CFB68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC2677C068B4A32EBEAABA8D2D9075AA /* Build configuration list for PBXNativeTarget "NSLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87C0D73D89EA3AD1DE0C8591E3270FF2 /* Debug */,
+				A75E08B16148C2D2908B957A7052B377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
