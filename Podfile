@@ -8,6 +8,8 @@ pod "NSLogger"
 pod 'FDFullscreenPopGesture', '~> 1.1'
 pod 'FDStackView', '~> 1.0'
 pod 'Bugly'
+pod 'SwiftyJSON', '~> 2.3.2'
+pod 'MJRefresh', '~> 3.1.0'
 pod 'Reveal-iOS-SDK', :configurations => ['Debug']
 end
 

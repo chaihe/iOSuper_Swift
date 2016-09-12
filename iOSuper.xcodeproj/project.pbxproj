@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		DD795B4CD56149F76FC5DA76 /* Pods_iOSuper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6AC3507E9EBE4FFBC5ED95D /* Pods_iOSuper.framework */; };
+		E63F56171D8670E7007B76D6 /* UIBarButtonItem+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63F56151D8670E7007B76D6 /* UIBarButtonItem+Addition.swift */; };
+		E63F56181D8670E7007B76D6 /* UIViewController+SB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63F56161D8670E7007B76D6 /* UIViewController+SB.swift */; };
+		E63F561B1D868137007B76D6 /* CZNetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63F561A1D868137007B76D6 /* CZNetWorkTool.swift */; };
 		E64D3EA31D7D3E7500A8A63D /* HomeListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E64D3EA21D7D3E7500A8A63D /* HomeListCell.xib */; };
 		E64D3EA51D7D439E00A8A63D /* CalculatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64D3EA41D7D439E00A8A63D /* CalculatorController.swift */; };
 		E64D3EA71D7D43B600A8A63D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64D3EA61D7D43B600A8A63D /* Home.storyboard */; };
-		E64D3EAA1D7D4F0E00A8A63D /* UIBarButtonItem+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64D3EA91D7D4F0E00A8A63D /* UIBarButtonItem+Addition.swift */; };
-		E669CB161D7EA2CC00C9FD24 /* UIViewController+SB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E669CB151D7EA2CC00C9FD24 /* UIViewController+SB.swift */; };
 		E671FCC21D7C8578006921EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E671FCC11D7C8578006921EF /* AppDelegate.swift */; };
 		E671FCC71D7C8578006921EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E671FCC51D7C8578006921EF /* Main.storyboard */; };
 		E671FCC91D7C8578006921EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E671FCC81D7C8578006921EF /* Assets.xcassets */; };
@@ -46,11 +47,12 @@
 		40A55DA0EDB3001202A1B67A /* Pods-iOSuper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSuper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSuper/Pods-iOSuper.debug.xcconfig"; sourceTree = "<group>"; };
 		601BDFDE5D1A5178322AFF50 /* Pods-iOSuper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSuper.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSuper/Pods-iOSuper.release.xcconfig"; sourceTree = "<group>"; };
 		A6AC3507E9EBE4FFBC5ED95D /* Pods_iOSuper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSuper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63F56151D8670E7007B76D6 /* UIBarButtonItem+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Addition.swift"; sourceTree = "<group>"; };
+		E63F56161D8670E7007B76D6 /* UIViewController+SB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SB.swift"; sourceTree = "<group>"; };
+		E63F561A1D868137007B76D6 /* CZNetWorkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZNetWorkTool.swift; sourceTree = "<group>"; };
 		E64D3EA21D7D3E7500A8A63D /* HomeListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeListCell.xib; sourceTree = "<group>"; };
 		E64D3EA41D7D439E00A8A63D /* CalculatorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorController.swift; sourceTree = "<group>"; };
 		E64D3EA61D7D43B600A8A63D /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		E64D3EA91D7D4F0E00A8A63D /* UIBarButtonItem+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Addition.swift"; sourceTree = "<group>"; };
-		E669CB151D7EA2CC00C9FD24 /* UIViewController+SB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SB.swift"; sourceTree = "<group>"; };
 		E671FCBE1D7C8578006921EF /* iOSuper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSuper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E671FCC11D7C8578006921EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E671FCC61D7C8578006921EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,13 +114,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		E64D3EA81D7D4E8D00A8A63D /* Other */ = {
+		E63F56141D8670E7007B76D6 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				E64D3EA91D7D4F0E00A8A63D /* UIBarButtonItem+Addition.swift */,
-				E669CB151D7EA2CC00C9FD24 /* UIViewController+SB.swift */,
+				E63F56151D8670E7007B76D6 /* UIBarButtonItem+Addition.swift */,
+				E63F56161D8670E7007B76D6 /* UIViewController+SB.swift */,
 			);
-			path = Other;
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E63F56191D867728007B76D6 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E63F561A1D868137007B76D6 /* CZNetWorkTool.swift */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		E671FCB51D7C8578006921EF = {
@@ -179,7 +189,8 @@
 			children = (
 				E671FCF01D7C8DF1006921EF /* Home */,
 				E671FCF11D7C8DF1006921EF /* Main */,
-				E64D3EA81D7D4E8D00A8A63D /* Other */,
+				E63F56141D8670E7007B76D6 /* Category */,
+				E63F56191D867728007B76D6 /* Tool */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -413,12 +424,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E64D3EAA1D7D4F0E00A8A63D /* UIBarButtonItem+Addition.swift in Sources */,
-				E669CB161D7EA2CC00C9FD24 /* UIViewController+SB.swift in Sources */,
+				E63F56171D8670E7007B76D6 /* UIBarButtonItem+Addition.swift in Sources */,
+				E63F56181D8670E7007B76D6 /* UIViewController+SB.swift in Sources */,
 				E671FCFC1D7C9775006921EF /* HomeListController.swift in Sources */,
 				E64D3EA51D7D439E00A8A63D /* CalculatorController.swift in Sources */,
 				E671FCFE1D7C97EF006921EF /* HomeListCell.swift in Sources */,
 				E671FCF71D7C9554006921EF /* MainNavgationController.swift in Sources */,
+				E63F561B1D868137007B76D6 /* CZNetWorkTool.swift in Sources */,
 				E671FCF31D7C8EC7006921EF /* MainTabbarController.swift in Sources */,
 				E671FCC21D7C8578006921EF /* AppDelegate.swift in Sources */,
 			);

@@ -14,5 +14,23 @@ class CalculatorController: UIViewController {
         super.viewDidLoad()
 
         self.title = "计算结果"
+        
+        self.getCalculator()
+    }
+    
+    func getCalculator() {
+        
+        let para = ["userName" : "chaizhi",
+                    "age"      : "18"]
+        
+        
+        CZNetWorkTool.shareNetWorkTool.get("http://localhost:8888/api/get_recent_posts/", para: nil) { (success, result, error) in
+        
+            if success{
+                print(result!)
+            }else{
+                print(result)
+            }
+        }
     }
 }

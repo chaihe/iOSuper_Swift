@@ -20,21 +20,6 @@ extension UIViewController{
         
         let sb = UIStoryboard.init(name: sbName.rawValue, bundle: NSBundle.mainBundle())
         let homeController = sb.instantiateViewControllerWithIdentifier("\(self)")
-        
-        print("deinit: \(object_getClassName(self))")
-        
-        // 返回应用程序名+类名+内存地址
-        
-        print("deinit: \(self)")
-        
-        // 返回应用程序名+类名+内存地址
-        
-        print("deinit: \(self.description)")
-        
-        // 返回类名
-        
-        print("deinit: \(self.dynamicType)")
-
         return homeController
     }
 }

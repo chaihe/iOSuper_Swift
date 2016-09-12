@@ -1,29 +1,35 @@
 PODS:
-  - Alamofire (3.4.2)
+  - Alamofire (3.5.0)
   - Bugly (2.4.0)
   - FDFullscreenPopGesture (1.1)
   - FDStackView (1.0)
+  - MJRefresh (3.1.12)
   - NSLogger (1.7.0):
     - NSLogger/Standard (= 1.7.0)
   - NSLogger/Standard (1.7.0)
   - Reveal-iOS-SDK (1.6.2)
+  - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
   - Bugly
   - FDFullscreenPopGesture (~> 1.1)
   - FDStackView (~> 1.0)
+  - MJRefresh (~> 3.1.0)
   - NSLogger
   - Reveal-iOS-SDK
+  - SwiftyJSON (~> 2.3.2)
 
 SPEC CHECKSUMS:
-  Alamofire: 6aa33201d20d069e1598891cf928883ff1888c7a
+  Alamofire: b70a7352335f8ea5babd0a923eb7e8eacc67b877
   Bugly: 3b56d8365c5687f74fd6fbb50c5b7ede3cdac96c
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   FDStackView: 3a4bbe0ce9c35e974246a585168b9da8c32213f1
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   NSLogger: daa17368272ddf10a0850c218fe49de23b50f2eb
   Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 88697d2006f70456341bf829bf2b6613cc57d21a
+PODFILE CHECKSUM: 9835f045895dccd3f4346e445ff1b55efc7a4948
 
 COCOAPODS: 1.0.1
