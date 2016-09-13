@@ -14,6 +14,7 @@
 		E64D3EA31D7D3E7500A8A63D /* HomeListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E64D3EA21D7D3E7500A8A63D /* HomeListCell.xib */; };
 		E64D3EA51D7D439E00A8A63D /* CalculatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64D3EA41D7D439E00A8A63D /* CalculatorController.swift */; };
 		E64D3EA71D7D43B600A8A63D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64D3EA61D7D43B600A8A63D /* Home.storyboard */; };
+		E65FE63D1D880080001D3699 /* CZArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65FE63C1D880080001D3699 /* CZArticles.swift */; };
 		E671FCC21D7C8578006921EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E671FCC11D7C8578006921EF /* AppDelegate.swift */; };
 		E671FCC71D7C8578006921EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E671FCC51D7C8578006921EF /* Main.storyboard */; };
 		E671FCC91D7C8578006921EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E671FCC81D7C8578006921EF /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		E671FCF71D7C9554006921EF /* MainNavgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E671FCF61D7C9554006921EF /* MainNavgationController.swift */; };
 		E671FCFC1D7C9775006921EF /* HomeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E671FCF91D7C9775006921EF /* HomeListController.swift */; };
 		E671FCFE1D7C97EF006921EF /* HomeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E671FCFD1D7C97EF006921EF /* HomeListCell.swift */; };
+		E6E1322A1D880E5700BD385D /* UITableView+CellLineHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E132291D880E5700BD385D /* UITableView+CellLineHidden.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,7 @@
 		E64D3EA21D7D3E7500A8A63D /* HomeListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeListCell.xib; sourceTree = "<group>"; };
 		E64D3EA41D7D439E00A8A63D /* CalculatorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorController.swift; sourceTree = "<group>"; };
 		E64D3EA61D7D43B600A8A63D /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		E65FE63C1D880080001D3699 /* CZArticles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CZArticles.swift; path = iOSuper/Classes/Tool/CZArticles.swift; sourceTree = SOURCE_ROOT; };
 		E671FCBE1D7C8578006921EF /* iOSuper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSuper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E671FCC11D7C8578006921EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E671FCC61D7C8578006921EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 		E671FCF61D7C9554006921EF /* MainNavgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavgationController.swift; sourceTree = "<group>"; };
 		E671FCF91D7C9775006921EF /* HomeListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeListController.swift; sourceTree = "<group>"; };
 		E671FCFD1D7C97EF006921EF /* HomeListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeListCell.swift; sourceTree = "<group>"; };
+		E6E132291D880E5700BD385D /* UITableView+CellLineHidden.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+CellLineHidden.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		E63F56141D8670E7007B76D6 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				E6E132291D880E5700BD385D /* UITableView+CellLineHidden.swift */,
 				E63F56151D8670E7007B76D6 /* UIBarButtonItem+Addition.swift */,
 				E63F56161D8670E7007B76D6 /* UIViewController+SB.swift */,
 			);
@@ -227,6 +232,7 @@
 		E671FCFA1D7C9775006921EF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E65FE63C1D880080001D3699 /* CZArticles.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -427,9 +433,11 @@
 				E63F56171D8670E7007B76D6 /* UIBarButtonItem+Addition.swift in Sources */,
 				E63F56181D8670E7007B76D6 /* UIViewController+SB.swift in Sources */,
 				E671FCFC1D7C9775006921EF /* HomeListController.swift in Sources */,
+				E65FE63D1D880080001D3699 /* CZArticles.swift in Sources */,
 				E64D3EA51D7D439E00A8A63D /* CalculatorController.swift in Sources */,
 				E671FCFE1D7C97EF006921EF /* HomeListCell.swift in Sources */,
 				E671FCF71D7C9554006921EF /* MainNavgationController.swift in Sources */,
+				E6E1322A1D880E5700BD385D /* UITableView+CellLineHidden.swift in Sources */,
 				E63F561B1D868137007B76D6 /* CZNetWorkTool.swift in Sources */,
 				E671FCF31D7C8EC7006921EF /* MainTabbarController.swift in Sources */,
 				E671FCC21D7C8578006921EF /* AppDelegate.swift in Sources */,

@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-typealias NetworkFinished = (success: Bool, result: String?, error: NSError?) ->()
+typealias NetworkFinished = (success: Bool, result: JSON?, error: NSError?) ->()
 
 class CZNetWorkTool: NSObject {
     
@@ -23,7 +23,9 @@ extension CZNetWorkTool{
         Alamofire.request(.GET, urlString, parameters: para).responseJSON { (response) -> Void in
             if let data = response.data {
                 let json = JSON(data: data)
-                print(json["posts"])
+                if  json["status"].string == "ok"{
+                    finished(success: true, result: json, error: nil)
+                }
             } else {
                 finished(success: false, result: nil, error: response.result.error)
             }

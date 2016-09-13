@@ -10,27 +10,30 @@ import UIKit
 
 class CalculatorController: UIViewController {
 
+    var articleModel : CZArticles?{
+        didSet{
+            self.addwebView()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.title = "计算结果"
         
         self.getCalculator()
+        
+        self.view.backgroundColor = UIColor.whiteColor()
+    }
+    
+    func addwebView(){
+        let webView = UIWebView()
+        webView.frame = self.view.frame
+        webView.loadRequest(NSURLRequest.init(URL: NSURL.init(string: (articleModel?.url)!)!))
+        self.view.addSubview(webView)
     }
     
     func getCalculator() {
         
-        let para = ["userName" : "chaizhi",
-                    "age"      : "18"]
-        
-        
-        CZNetWorkTool.shareNetWorkTool.get("http://localhost:8888/api/get_recent_posts/", para: nil) { (success, result, error) in
-        
-            if success{
-                print(result!)
-            }else{
-                print(result)
-            }
-        }
     }
 }
