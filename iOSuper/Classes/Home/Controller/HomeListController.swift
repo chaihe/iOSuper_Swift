@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import MJRefresh
+    
 class HomeListController: UITableViewController {
     
     let cellHieght : CGFloat = 133.0
@@ -19,21 +20,29 @@ class HomeListController: UITableViewController {
         
         self.navigationItem.title = "Homelist"
         
-        self.tableView.hideCellLine(true)
+        self.edgesForExtendedLayout = .Top
         
-        tableView.tableHeaderView
+        self.automaticallyAdjustsScrollViewInsets = false;
+        
+        self.tableView.hideCellLine(true)
+    
+        tableView.mj_header = MJRefreshNormalHeader(refreshingBlock: { 
+            self.loadArticles()
+        })
+        tableView.mj_header.beginRefreshing()
         
         self.loadArticles()
     }
     
     func loadArticles() {
     
+        
         CZNetWorkTool.shareNetWorkTool.get("http://10.0.0.246:8888/api/get_recent_posts/", para: nil) { (success, result, error) in
             
             if success == true{
                 if let successResult = result{
                     let arrData = successResult["posts"].arrayValue
-                    
+                    self.articleList.removeAll()
                     for list in arrData{
                         let dict = ["title"             : list["title"].stringValue,
                                     "content"           : list["content"].stringValue,
@@ -44,9 +53,12 @@ class HomeListController: UITableViewController {
                         let czArticles = CZArticles(dict: dict)
                         self.articleList.append(czArticles)
                     }
+                    
                     self.tableView.reloadData()
                 }
             }
+            
+            self.tableView.mj_header.endRefreshing()
         }
     }
 }
@@ -70,7 +82,7 @@ extension HomeListController{
         
         var cell = tableView.dequeueReusableCellWithIdentifier(identifilerCell) as? HomeListCell
         if cell == nil {
-            cell = NSBundle.mainBundle().loadNibNamed("HomeListCell", owner: self, options: nil).last as? HomeListCell
+            cell = NSBundle.mainBundle().loadNibNamed("HomeListCell", owner: self, options: nil)!.last as? HomeListCell
         }
         
         let articles = self.articleList[indexPath.row]
@@ -83,7 +95,7 @@ extension HomeListController{
 //        let homeInofs = CalculatorController.initWithSB(sbType.sbTypeHome) as! CalculatorController
 //        homeInofs.articleModel = self.articleList[indexPath.row]
         if indexPath.row == 1 {
-            self.getCalculator()
+            self.loadArticles()
             return
         }
         let homeInfos = CalculatorController()
