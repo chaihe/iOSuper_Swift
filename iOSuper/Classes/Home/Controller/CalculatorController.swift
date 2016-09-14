@@ -18,7 +18,7 @@ class CalculatorController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+ 
         self.title = "计算结果"
         
         self.getCalculator()

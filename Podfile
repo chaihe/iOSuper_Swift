@@ -10,6 +10,8 @@ pod 'FDStackView', '~> 1.0'
 pod 'Bugly'
 pod 'SwiftyJSON', '~> 2.3.2'
 pod 'MJRefresh', '~> 3.1.0'
+pod 'YYWebImage', '1.0.3'
+pod 'SVProgressHUD', '~> 2.0.3'
 pod 'Reveal-iOS-SDK', :configurations => ['Debug']
 end
 

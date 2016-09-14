@@ -21,26 +21,25 @@ class HomeListController: UITableViewController {
         
         self.tableView.hideCellLine(true)
         
-        self.getCalculator()
+        tableView.tableHeaderView
+        
+        self.loadArticles()
     }
     
-    func getCalculator() {
-        
-        //        let para = ["userName" : "chaizhi",
-        //                    "age"      : "18"]
-        
-        CZNetWorkTool.shareNetWorkTool.get("http://localhost:8888/api/get_recent_posts/", para: nil) { (success, result, error) in
-            
+    func loadArticles() {
+    
+        CZNetWorkTool.shareNetWorkTool.get("http://10.0.0.246:8888/api/get_recent_posts/", para: nil) { (success, result, error) in
             
             if success == true{
                 if let successResult = result{
                     let arrData = successResult["posts"].arrayValue
                     
                     for list in arrData{
-                        let dict = ["title"     : list["title"].stringValue,
-                                    "content"   : list["content"].stringValue,
-                                    "date"      : list["date"].stringValue,
-                                    "url"       : list["url"].stringValue]
+                        let dict = ["title"             : list["title"].stringValue,
+                                    "content"           : list["content"].stringValue,
+                                    "date"              : list["date"].stringValue,
+                                    "url"               : list["url"].stringValue,
+                                    "thumbnail_images"  : list["thumbnail_images"]["full"]["url"].stringValue]
                         
                         let czArticles = CZArticles(dict: dict)
                         self.articleList.append(czArticles)
@@ -83,6 +82,10 @@ extension HomeListController{
         
 //        let homeInofs = CalculatorController.initWithSB(sbType.sbTypeHome) as! CalculatorController
 //        homeInofs.articleModel = self.articleList[indexPath.row]
+        if indexPath.row == 1 {
+            self.getCalculator()
+            return
+        }
         let homeInfos = CalculatorController()
         homeInfos.articleModel = self.articleList[indexPath.row]
         self.navigationController?.pushViewController(homeInfos, animated: true)

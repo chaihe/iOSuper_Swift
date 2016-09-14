@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import YYWebImage
 
 class HomeListCell: UITableViewCell {
     
     @IBOutlet weak var lbTltle:     UILabel!
     @IBOutlet weak var lbTimer:     UILabel!
     @IBOutlet weak var lbContent:   UILabel!
+    @IBOutlet weak var imgIcon:     UIImageView!
     
     var cellTitle : String?{
         didSet{
@@ -22,8 +24,8 @@ class HomeListCell: UITableViewCell {
     
     var articles : CZArticles?{
         didSet{
-            self.lbTltle.text   = articles?.title
             self.lbTimer.text   = articles?.date
+            self.lbTltle.text   = articles?.title
             
             let htmlText = (articles?.content)!
             do{
@@ -33,6 +35,7 @@ class HomeListCell: UITableViewCell {
             }catch let error as NSError {
                 print(error.localizedDescription)
             }
+            self.imgIcon.yy_imageURL = NSURL(string: (articles?.thumbnail_images)!)
         }
     }
 }

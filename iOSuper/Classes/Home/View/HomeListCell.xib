@@ -32,8 +32,16 @@
                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mIm-pK-L4u">
+                        <rect key="frame" x="20" y="99.5" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="eV6-Lc-T5r"/>
+                            <constraint firstAttribute="width" constant="25" id="fYN-jj-5yE"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="mIm-pK-L4u" secondAttribute="bottom" constant="8" id="4R6-lr-k9Q"/>
                     <constraint firstItem="ly9-j0-7jB" firstAttribute="top" secondItem="iw1-12-BcH" secondAttribute="top" constant="30" id="BdI-JP-b4q"/>
                     <constraint firstItem="KdL-BV-wbN" firstAttribute="leading" secondItem="iw1-12-BcH" secondAttribute="leading" constant="20" id="Clc-yd-VRK"/>
                     <constraint firstItem="WpO-xi-xC4" firstAttribute="leading" secondItem="iw1-12-BcH" secondAttribute="leading" constant="20" id="U8v-vy-qu3"/>
@@ -42,6 +50,7 @@
                     <constraint firstItem="WpO-xi-xC4" firstAttribute="top" secondItem="iw1-12-BcH" secondAttribute="top" constant="20" id="ZBJ-Do-YaB"/>
                     <constraint firstAttribute="trailing" secondItem="KdL-BV-wbN" secondAttribute="trailing" constant="20" id="dvc-W2-RHR"/>
                     <constraint firstAttribute="bottom" secondItem="KdL-BV-wbN" secondAttribute="bottom" constant="10" id="kJb-jo-vGt"/>
+                    <constraint firstItem="mIm-pK-L4u" firstAttribute="leading" secondItem="iw1-12-BcH" secondAttribute="leading" constant="20" id="qHt-FH-KXU"/>
                     <constraint firstAttribute="trailing" secondItem="WpO-xi-xC4" secondAttribute="trailing" constant="20" id="rPe-go-qAd"/>
                     <constraint firstAttribute="trailing" secondItem="ly9-j0-7jB" secondAttribute="trailing" constant="20" id="rrw-NB-e1C"/>
                 </constraints>
@@ -52,11 +61,12 @@
                 </variation>
             </tableViewCellContentView>
             <connections>
+                <outlet property="imgIcon" destination="mIm-pK-L4u" id="VJx-VJ-45H"/>
                 <outlet property="lbContent" destination="ly9-j0-7jB" id="aab-im-rzu"/>
                 <outlet property="lbTimer" destination="KdL-BV-wbN" id="hRB-p0-562"/>
                 <outlet property="lbTltle" destination="WpO-xi-xC4" id="m4A-rI-UaF"/>
             </connections>
-            <point key="canvasLocation" x="319" y="385.5"/>
+            <point key="canvasLocation" x="318.5" y="385.5"/>
         </tableViewCell>
     </objects>
 </document>
