@@ -27,8 +27,7 @@ class CalculatorController: UIViewController {
     }
     
     func addwebView(){
-        let webView = UIWebView()
-        webView.frame = self.view.frame
+        let webView = UIWebView(frame: self.view.bounds)
         webView.loadRequest(NSURLRequest.init(URL: NSURL.init(string: (articleModel?.url)!)!))
         self.view.addSubview(webView)
     }

@@ -30,6 +30,5 @@ extension CZNetWorkTool{
                 finished(success: false, result: nil, error: response.result.error)
             }
         }
-        finished(success: true, result: "CZNetWorkTool_get", error: nil)
     }
 }

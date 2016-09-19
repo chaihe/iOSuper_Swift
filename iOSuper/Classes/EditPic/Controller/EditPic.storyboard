@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit Pic Controller-->
+        <scene sceneID="DgK-sb-O7A">
+            <objects>
+                <viewController storyboardIdentifier="CZEditPicController" id="5ch-ht-1WA" customClass="CZEditPicController" customModule="iOSuper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BmB-DZ-uuC"/>
+                        <viewControllerLayoutGuide type="bottom" id="WXa-ww-UIq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X1u-R4-fGh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nVR-Tj-B4C">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="eV1-yA-KxA"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="agF-Bm-xGV">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ocy-YK-5bS">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic" translatesAutoresizingMaskIntoConstraints="NO" id="h81-Ph-lEv">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="375" id="G6h-ZK-Eh0"/>
+                                    <constraint firstAttribute="width" constant="375" id="mA4-Nj-8DT"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nVR-Tj-B4C" firstAttribute="leading" secondItem="X1u-R4-fGh" secondAttribute="leading" id="KVn-3C-aj7"/>
+                            <constraint firstItem="WXa-ww-UIq" firstAttribute="top" secondItem="nVR-Tj-B4C" secondAttribute="bottom" id="W35-x8-GEE"/>
+                            <constraint firstAttribute="trailing" secondItem="nVR-Tj-B4C" secondAttribute="trailing" id="eKk-KP-SqE"/>
+                            <constraint firstAttribute="trailing" secondItem="h81-Ph-lEv" secondAttribute="trailing" id="tuU-3t-lwv"/>
+                            <constraint firstItem="h81-Ph-lEv" firstAttribute="top" secondItem="BmB-DZ-uuC" secondAttribute="bottom" id="wgX-et-1h4"/>
+                            <constraint firstItem="h81-Ph-lEv" firstAttribute="leading" secondItem="X1u-R4-fGh" secondAttribute="leading" id="yPf-5V-CaU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d7k-0N-CL6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-175.19999999999999" y="-215.44227886056973"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pic" width="612" height="612"/>
+    </resources>
+</document>

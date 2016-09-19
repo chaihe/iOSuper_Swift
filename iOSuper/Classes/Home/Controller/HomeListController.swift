@@ -1,4 +1,4 @@
-    //
+//
 //  HomeListController.swift
 //  iOSuper
 //
@@ -18,20 +18,14 @@ class HomeListController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = "Homelist"
-        
-        self.edgesForExtendedLayout = .Top
-        
-        self.automaticallyAdjustsScrollViewInsets = false;
-        
         self.tableView.hideCellLine(true)
     
-        tableView.mj_header = MJRefreshNormalHeader(refreshingBlock: { 
+        self.navigationItem.title = "Homelist"
+
+        tableView.mj_header = MJRefreshNormalHeader(refreshingBlock: {
             self.loadArticles()
         })
         tableView.mj_header.beginRefreshing()
-        
-        self.loadArticles()
     }
     
     func loadArticles() {
@@ -42,7 +36,6 @@ class HomeListController: UITableViewController {
             if success == true{
                 if let successResult = result{
                     let arrData = successResult["posts"].arrayValue
-                    self.articleList.removeAll()
                     for list in arrData{
                         let dict = ["title"             : list["title"].stringValue,
                                     "content"           : list["content"].stringValue,
@@ -84,21 +77,17 @@ extension HomeListController{
         if cell == nil {
             cell = NSBundle.mainBundle().loadNibNamed("HomeListCell", owner: self, options: nil)!.last as? HomeListCell
         }
-        
-        let articles = self.articleList[indexPath.row]
-        cell?.articles = articles
         return cell!
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-//        let homeInofs = CalculatorController.initWithSB(sbType.sbTypeHome) as! CalculatorController
-//        homeInofs.articleModel = self.articleList[indexPath.row]
+        let homeInfos = CalculatorController.initWithSB(sbType.sbTypeHome) as! CalculatorController
         if indexPath.row == 1 {
             self.loadArticles()
             return
         }
-        let homeInfos = CalculatorController()
+//        let homeInfos = CalculatorController()
         homeInfos.articleModel = self.articleList[indexPath.row]
         self.navigationController?.pushViewController(homeInfos, animated: true)
         
@@ -106,5 +95,35 @@ extension HomeListController{
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return cellHieght
+    }
+    
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        var rotation : CATransform3D
+        
+        rotation = CATransform3DMakeTranslation(0 ,50 ,20);
+        //        rotation = CATransform3DMakeRotation( M_PI_4 , 0.0, 0.7, 0.4);
+        //逆时针旋转
+        
+        rotation = CATransform3DScale(rotation, 0.9, 0.9, 1);
+        
+        rotation.m34 = (1.0 / -600.0);
+        
+        cell.layer.shadowColor = UIColor.blackColor().CGColor
+        cell.layer.shadowOffset = CGSizeMake(10, 10);
+        cell.alpha = 0;
+
+        cell.layer.transform = rotation
+        
+        UIView.beginAnimations("rotation", context: nil)
+        UIView.setAnimationDuration(0.6)
+        //旋转时间
+        cell.layer.transform = CATransform3DIdentity;
+        cell.alpha = 1;
+        cell.layer.shadowOffset = CGSizeMake(0, 0);
+        UIView.commitAnimations()
+
+        let articleCell = cell as! HomeListCell
+        articleCell.articles = self.articleList[indexPath.row]
     }
 }

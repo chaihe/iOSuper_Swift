@@ -10,8 +10,9 @@ import UIKit
 
 enum sbType:String {
     
-    case sbTypeMain = "Main"
-    case sbTypeHome = "Home"
+    case sbTypeMain         = "Main"
+    case sbTypeHome         = "Home"
+    case sbTypeEditPic      = "EditPic"
 }
 
 extension UIViewController{
