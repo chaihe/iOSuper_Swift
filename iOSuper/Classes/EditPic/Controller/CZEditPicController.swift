@@ -15,7 +15,16 @@ class CZEditPicController: UIViewController {
 
         self.navigationItem.title = "编辑图片"
 
-        self.automaticallyAdjustsScrollViewInsets = true;
+        self.edgesForExtendedLayout = .None
+        
+        self.view.backgroundColor = UIColor.whiteColor()
     }
     
+    func setHeadView(){
+    
+        
+        let headView = UIView(frame: CGRectMake(0, 0, 375, 64))
+        headView.
+        self.view.addSubview(headView)
+    }
 }

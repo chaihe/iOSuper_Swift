@@ -18,7 +18,7 @@ class MainTabbarController: UITabBarController {
 //        self.automaticallyAdjustsScrollViewInsets = false;
         
         addChildViewController(HomeListController(), title: "首页", iamge: "Assets_Tabbar_Icon_Home")
-        addChildViewController(CZEditPicController.initWithSB(sbType.sbTypeEditPic), title: "图片", iamge: "Assets_Tabbar_Icon_Home")
+        addChildViewController(CZSelectPicController.initWithSB(sbType.sbTypeEditPic), title: "图片", iamge: "Assets_Tabbar_Icon_Home")
     }
     
     func addChildViewController(childController: UIViewController,title: String, iamge:String) {
