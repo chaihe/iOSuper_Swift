@@ -18,13 +18,15 @@ class CZEditPicController: UIViewController {
         self.edgesForExtendedLayout = .None
         
         self.view.backgroundColor = UIColor.whiteColor()
+        
+        self.setHeadView()
     }
     
     func setHeadView(){
     
         
         let headView = UIView(frame: CGRectMake(0, 0, 375, 64))
-        headView.
+        headView.backgroundColor = CZColor
         self.view.addSubview(headView)
     }
 }
