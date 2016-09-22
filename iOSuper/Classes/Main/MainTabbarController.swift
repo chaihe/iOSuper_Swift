@@ -15,6 +15,7 @@ class MainTabbarController: UITabBarController {
         
         self.navigationItem.title = "首页"
         self.edgesForExtendedLayout = .Top
+        self.selectedIndex = 1
 //        self.automaticallyAdjustsScrollViewInsets = false;
         
         addChildViewController(HomeListController(), title: "首页", iamge: "Assets_Tabbar_Icon_Home")

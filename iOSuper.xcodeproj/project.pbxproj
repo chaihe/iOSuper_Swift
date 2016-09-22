@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DD795B4CD56149F76FC5DA76 /* Pods_iOSuper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6AC3507E9EBE4FFBC5ED95D /* Pods_iOSuper.framework */; };
+		E60B3E461D940B960043831E /* CZIMGCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60B3E441D940B960043831E /* CZIMGCell.swift */; };
+		E60B3E471D940B960043831E /* CZIMGCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E60B3E451D940B960043831E /* CZIMGCell.xib */; };
 		E60F1FBE1D903EEF00483B90 /* CZArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60F1FBD1D903EEF00483B90 /* CZArticles.swift */; };
 		E60F1FC31D903F4700483B90 /* CZEditPicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60F1FC21D903F4700483B90 /* CZEditPicController.swift */; };
 		E60F1FC51D90413200483B90 /* EditPic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60F1FC41D90413200483B90 /* EditPic.storyboard */; };
@@ -54,6 +56,8 @@
 		40A55DA0EDB3001202A1B67A /* Pods-iOSuper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSuper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSuper/Pods-iOSuper.debug.xcconfig"; sourceTree = "<group>"; };
 		601BDFDE5D1A5178322AFF50 /* Pods-iOSuper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSuper.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSuper/Pods-iOSuper.release.xcconfig"; sourceTree = "<group>"; };
 		A6AC3507E9EBE4FFBC5ED95D /* Pods_iOSuper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSuper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E60B3E441D940B960043831E /* CZIMGCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZIMGCell.swift; sourceTree = "<group>"; };
+		E60B3E451D940B960043831E /* CZIMGCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZIMGCell.xib; sourceTree = "<group>"; };
 		E60F1FBD1D903EEF00483B90 /* CZArticles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZArticles.swift; sourceTree = "<group>"; };
 		E60F1FC21D903F4700483B90 /* CZEditPicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZEditPicController.swift; sourceTree = "<group>"; };
 		E60F1FC41D90413200483B90 /* EditPic.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditPic.storyboard; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 		E60F1FC11D903F2000483B90 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E60B3E441D940B960043831E /* CZIMGCell.swift */,
+				E60B3E451D940B960043831E /* CZIMGCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -403,6 +409,7 @@
 			files = (
 				E671FCCC1D7C8578006921EF /* LaunchScreen.storyboard in Resources */,
 				E60F1FC51D90413200483B90 /* EditPic.storyboard in Resources */,
+				E60B3E471D940B960043831E /* CZIMGCell.xib in Resources */,
 				E64D3EA71D7D43B600A8A63D /* Home.storyboard in Resources */,
 				E671FCC91D7C8578006921EF /* Assets.xcassets in Resources */,
 				E64D3EA31D7D3E7500A8A63D /* HomeListCell.xib in Resources */,
@@ -483,6 +490,7 @@
 				E60F1FC91D91704E00483B90 /* CZConfigure.swift in Sources */,
 				E60F1FBE1D903EEF00483B90 /* CZArticles.swift in Sources */,
 				E63F56181D8670E7007B76D6 /* UIViewController+SB.swift in Sources */,
+				E60B3E461D940B960043831E /* CZIMGCell.swift in Sources */,
 				E671FCFC1D7C9775006921EF /* HomeListController.swift in Sources */,
 				E64D3EA51D7D439E00A8A63D /* CalculatorController.swift in Sources */,
 				E671FCFE1D7C97EF006921EF /* HomeListCell.swift in Sources */,
