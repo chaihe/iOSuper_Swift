@@ -7,13 +7,19 @@
 //
 
 import UIKit
+import AssetsLibrary
+import Photos
 
 class CZEditPicController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
 
     var navView : UIView?
     var imgView : UIImageView?
+    var titleButton: PMPickerTitleButton?
     var collectionPic : UICollectionView?
     
+    var arrImg = [UIImage]()
+    var arrGroups = [PHAssetCollection]?()
+    var arrAssets = [PHAsset]?()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +31,43 @@ class CZEditPicController: UIViewController,UICollectionViewDelegate,UICollectio
         self.view.backgroundColor = UIColor.whiteColor()
         
         self.setHeadView()
+        
+        self.loadArrPic()
+    }
+    
+    func loadArrPic() {
+        
+        PMImageManger.photoAuthorization { (granted: Bool) in
+            if granted {
+                
+                // Asynchronous get photos, avoid taking the main thread
+                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
+                    if (self.arrGroups == nil) {
+                        self.arrGroups = PMImageManger.photoLibrarys()
+                    }
+                    
+                    let group = self.arrGroups![0]
+                    if (self.arrAssets == nil) {
+                        self.arrAssets = PMImageManger.photoAssetsForAlbum(group)
+                    }
+                    
+                    PMImageManger.imageFromAsset(self.arrAssets!.first!, isOriginal: true, toSize: nil, resultHandler: { (image: UIImage?) in
+                        // Set header photo
+                    })
+                    
+                    for asset: PHAsset in self.arrAssets! {
+                        PMImageManger.imageFromAsset(asset, isOriginal: false, toSize: CGSizeMake(150, 150), resultHandler: { (image: UIImage?) in
+                            self.arrImg.append(image!)
+                        })
+                    }
+                    
+                    dispatch_async(dispatch_get_main_queue(), {
+                        // Reload data
+                        self.collectionPic?.reloadData()
+                    })
+                })
+            }
+        }
     }
 }
 
@@ -36,15 +79,30 @@ extension CZEditPicController{
     }
     //返回多少个cell
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return arrImg.count
     }
     //返回自定义的cell
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CZIMGCell", forIndexPath: indexPath) as! CZIMGCell
+        cell.imgPic.image = arrImg[indexPath.item]
         return cell
     }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        PMImageManger.imageFromAsset(arrAssets![indexPath.item], isOriginal: true, toSize: nil, resultHandler: { (image: UIImage?) in
+            if let _image = image {
+                self.imgView?.image = _image
+            }
+        })
+    }
 
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        let width = kScreenWidth/4
+        return CGSizeMake(width, width)
+    }
+    
     //返回cell 上下左右的间距
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets{
         return UIEdgeInsetsMake(5, 10, 5, 10)
@@ -55,21 +113,38 @@ extension CZEditPicController{
 extension CZEditPicController{
     func setHeadView(){
         
-        //添加自定义NAVVIEW
-        navView = UIView(frame: CGRectMake(0, 0, kScreenWidth, 64))
-        navView?.backgroundColor = UIColor.clearColor()
-        navView?.clipsToBounds = true
-        self.view.addSubview(navView!)
+        let leftBarItem = UIBarButtonItem.init(title: "Cancel", style: UIBarButtonItemStyle.Done, target: self, action: #selector(CZEditPicController.cancelClick))
+        navigationItem.leftBarButtonItem = leftBarItem
+        let rightBarItem = UIBarButtonItem.init(title: "Next", style: UIBarButtonItemStyle.Done, target: self, action: #selector(CZEditPicController.nextClick))
+        navigationItem.rightBarButtonItem = rightBarItem
         
-        let btnCancel = self.initBtn(CGRectMake(14, 0 , 60, 64), title: "Cancel", action: #selector(CZEditPicController.cancelClick))
-        navView?.addSubview(btnCancel)
-        let btnNext = self.initBtn(CGRectMake(kScreenWidth - 80, 0 , 60, 66), title: "Next", action: #selector(CZEditPicController.nextClick))
-        navView?.addSubview(btnNext)
-        self.view.addSubview(navView!)
+        // Title select photos
+        let image = UIImage.init(named: "albums-arrow")
+        let hImage = image!.imageWithColor(UIColor.lightGrayColor())
+        titleButton = PMPickerTitleButton.init(type: .Custom)
+        if #available(iOS 8.2, *) {
+            titleButton?.titleLabel?.font = UIFont.systemFontOfSize(17,weight: UIFontWeightMedium
+            )
+        } else {
+            titleButton?.titleLabel?.font = UIFont.boldSystemFontOfSize(17)
+        }
+        titleButton?.setTitle("Camera", forState: UIControlState.Normal)
+        titleButton?.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        titleButton?.setTitleColor(UIColor.lightGrayColor(), forState: UIControlState.Highlighted)
+        titleButton?.setTitleColor(UIColor.lightGrayColor(), forState: UIControlState.Selected)
+        titleButton?.setImage(image, forState: UIControlState.Normal)
+        titleButton?.setImage(hImage, forState: UIControlState.Highlighted)
+        titleButton?.setImage(hImage, forState: UIControlState.Selected)
+        titleButton?.sizeToFit()
+        titleButton?.addTarget(self, action: #selector(CZEditPicController.titleClick), forControlEvents: UIControlEvents.TouchUpInside)
+        navigationItem.titleView = titleButton
+        
         
         //添加编辑图片区域
         imgView = UIImageView(image: UIImage(named: "pic"))
-        imgView?.frame = CGRectMake(0, 64, kScreenWidth, ((kScreenHeight - 64)*0.6))
+        imgView?.frame = CGRectMake(0, 0, kScreenWidth, ((kScreenHeight - 64)*0.6))
+        imgView?.contentMode = UIViewContentMode.ScaleAspectFill
+        imgView?.clipsToBounds = true
         self.view.addSubview(imgView!)
         
         //添加编辑图片相册collectionView
@@ -82,22 +157,14 @@ extension CZEditPicController{
         self.view.addSubview(collectionPic!)
     }
     
-    func initBtn(frame:CGRect, title:String, action:Selector) -> UIButton {
-        
-        let btnCustom = UIButton(type: .Custom)
-        btnCustom.frame = frame
-        btnCustom.setTitle(title, forState: .Normal)
-        btnCustom.setTitleColor(RGB(203, g: 45, b: 54), forState: .Normal)
-        btnCustom.addTarget(self, action: action, forControlEvents: .TouchUpInside)
-        
-        return btnCustom
-    }
-    
     func cancelClick() {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func nextClick() {
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    func titleClick() {
+//        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

@@ -20,9 +20,9 @@ class CZSelectPicController: UIViewController {
         
         print("btnSelectPic")
         
-        let editPic = CZEditPicController()
+        let navEdit = MainNavgationController(rootViewController: CZEditPicController())
         
-        self.presentViewController(editPic, animated: true, completion: nil)
+        self.presentViewController(navEdit, animated: true, completion: nil)
         
     }
 }

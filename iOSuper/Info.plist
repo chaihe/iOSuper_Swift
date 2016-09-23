@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>Privacy - Camera Usage Description</key>
+    <string>允许此权限才能使用相机功能</string>
+    <key>Privacy - Photo Library Usage Description</key>
+    <string>允许此权限才能保存图片</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>&quot;需要使用您的相册&quot;</string>
+    <key>NSCameraUsageDescription</key>
+    <string>&quot;需要使用您的相机&quot;</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

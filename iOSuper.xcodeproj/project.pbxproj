@@ -16,6 +16,9 @@
 		E60F1FC71D9090B800483B90 /* CZSelectPicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60F1FC61D9090B800483B90 /* CZSelectPicController.swift */; };
 		E60F1FC91D91704E00483B90 /* CZConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60F1FC81D91704E00483B90 /* CZConfigure.swift */; };
 		E60F1FCB1D91717300483B90 /* UIView+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60F1FCA1D91717300483B90 /* UIView+Color.swift */; };
+		E63260001D95198D0023EAA0 /* cameraRoll.photosCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6325FFF1D95198D0023EAA0 /* cameraRoll.photosCount.swift */; };
+		E63260021D9519CB0023EAA0 /* PMGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63260011D9519CB0023EAA0 /* PMGroupModel.swift */; };
+		E63260041D952C360023EAA0 /* PMPickerTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63260031D952C360023EAA0 /* PMPickerTitleButton.swift */; };
 		E63F56171D8670E7007B76D6 /* UIBarButtonItem+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63F56151D8670E7007B76D6 /* UIBarButtonItem+Addition.swift */; };
 		E63F56181D8670E7007B76D6 /* UIViewController+SB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63F56161D8670E7007B76D6 /* UIViewController+SB.swift */; };
 		E63F561B1D868137007B76D6 /* CZNetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63F561A1D868137007B76D6 /* CZNetWorkTool.swift */; };
@@ -64,6 +67,9 @@
 		E60F1FC61D9090B800483B90 /* CZSelectPicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZSelectPicController.swift; sourceTree = "<group>"; };
 		E60F1FC81D91704E00483B90 /* CZConfigure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZConfigure.swift; sourceTree = "<group>"; };
 		E60F1FCA1D91717300483B90 /* UIView+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Color.swift"; sourceTree = "<group>"; };
+		E6325FFF1D95198D0023EAA0 /* cameraRoll.photosCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cameraRoll.photosCount.swift; sourceTree = "<group>"; };
+		E63260011D9519CB0023EAA0 /* PMGroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMGroupModel.swift; sourceTree = "<group>"; };
+		E63260031D952C360023EAA0 /* PMPickerTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMPickerTitleButton.swift; sourceTree = "<group>"; };
 		E63F56151D8670E7007B76D6 /* UIBarButtonItem+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Addition.swift"; sourceTree = "<group>"; };
 		E63F56161D8670E7007B76D6 /* UIViewController+SB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SB.swift"; sourceTree = "<group>"; };
 		E63F561A1D868137007B76D6 /* CZNetWorkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZNetWorkTool.swift; sourceTree = "<group>"; };
@@ -135,6 +141,7 @@
 		E60F1FBA1D903E2900483B90 /* EditPic */ = {
 			isa = PBXGroup;
 			children = (
+				E6325FFA1D9514AB0023EAA0 /* Tool */,
 				E60F1FBF1D903F2000483B90 /* Controller */,
 				E60F1FC01D903F2000483B90 /* Model */,
 				E60F1FC11D903F2000483B90 /* View */,
@@ -155,6 +162,7 @@
 		E60F1FC01D903F2000483B90 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E63260011D9519CB0023EAA0 /* PMGroupModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,10 +170,19 @@
 		E60F1FC11D903F2000483B90 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E63260031D952C360023EAA0 /* PMPickerTitleButton.swift */,
 				E60B3E441D940B960043831E /* CZIMGCell.swift */,
 				E60B3E451D940B960043831E /* CZIMGCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E6325FFA1D9514AB0023EAA0 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E6325FFF1D95198D0023EAA0 /* cameraRoll.photosCount.swift */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		E63F56141D8670E7007B76D6 /* Category */ = {
@@ -494,12 +511,15 @@
 				E671FCFC1D7C9775006921EF /* HomeListController.swift in Sources */,
 				E64D3EA51D7D439E00A8A63D /* CalculatorController.swift in Sources */,
 				E671FCFE1D7C97EF006921EF /* HomeListCell.swift in Sources */,
+				E63260001D95198D0023EAA0 /* cameraRoll.photosCount.swift in Sources */,
 				E671FCF71D7C9554006921EF /* MainNavgationController.swift in Sources */,
 				E6E1322A1D880E5700BD385D /* UITableView+CellLineHidden.swift in Sources */,
 				E60F1FC71D9090B800483B90 /* CZSelectPicController.swift in Sources */,
+				E63260021D9519CB0023EAA0 /* PMGroupModel.swift in Sources */,
 				E63F561B1D868137007B76D6 /* CZNetWorkTool.swift in Sources */,
 				E671FCF31D7C8EC7006921EF /* MainTabbarController.swift in Sources */,
 				E60F1FCB1D91717300483B90 /* UIView+Color.swift in Sources */,
+				E63260041D952C360023EAA0 /* PMPickerTitleButton.swift in Sources */,
 				E671FCC21D7C8578006921EF /* AppDelegate.swift in Sources */,
 				E60F1FC31D903F4700483B90 /* CZEditPicController.swift in Sources */,
 			);
